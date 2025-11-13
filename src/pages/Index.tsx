@@ -346,11 +346,11 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-3">
-              {villes.slice(0, 25).map((ville) => (
+              {villes.slice(0, 12).map((ville, index) => (
                 <Link
                   key={ville.slug}
                   to={`/ville/${ville.slug}`}
-                  className="group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm"
+                  className={`group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
                 >
                   <span className="text-foreground group-hover:text-secondary">
                     {ville.ville}
@@ -387,11 +387,11 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-3">
-              {secteurs.slice(0, 21).map((secteur) => (
+              {secteurs.slice(0, 12).map((secteur, index) => (
                 <Link
                   key={secteur.slug}
                   to={`/secteur/${secteur.slug}`}
-                  className="group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm"
+                  className={`group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
                 >
                   <span className="text-foreground group-hover:text-secondary">
                     {secteur.secteur}
