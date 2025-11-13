@@ -70,7 +70,6 @@ const Tarifs = () => {
                     "Analyse de performance",
                     "2 révisions post-livraison",
                     "Support 7 jours post-livraison",
-                    "Export statique pour Vercel/Hostinger",
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
