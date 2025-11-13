@@ -13,9 +13,12 @@ import {
   Euro,
   MessageCircle,
   Star,
+  MapPin,
+  Briefcase,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { villes, secteurs } from "@/utils/csvParser";
 
 const Index = () => {
   const features = [
@@ -323,6 +326,88 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Villes desservies Section */}
+      <section className="border-b border-border bg-background py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
+                <MapPin className="h-4 w-4" />
+                <span>Disponible partout en France</span>
+              </div>
+              <h2 className="mb-4">Nos villes desservies en France</h2>
+              <p className="text-lg text-muted-foreground">
+                Nous créons votre landing page premium en 3 jours dans toutes ces villes.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              {villes.slice(0, 25).map((ville) => (
+                <Link
+                  key={ville.slug}
+                  to={`/ville/${ville.slug}`}
+                  className="group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm"
+                >
+                  <span className="text-foreground group-hover:text-secondary">
+                    {ville.ville}
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button variant="outline" asChild>
+                <Link to="/villes">
+                  Voir toutes les villes
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Secteurs pris en charge Section */}
+      <section className="border-b border-border bg-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
+                <Briefcase className="h-4 w-4" />
+                <span>Tous secteurs d'activité</span>
+              </div>
+              <h2 className="mb-4">Secteurs pour lesquels nous créons des landing pages</h2>
+              <p className="text-lg text-muted-foreground">
+                Nos designs premium s'adaptent à tous les métiers.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              {secteurs.slice(0, 21).map((secteur) => (
+                <Link
+                  key={secteur.slug}
+                  to={`/secteur/${secteur.slug}`}
+                  className="group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm"
+                >
+                  <span className="text-foreground group-hover:text-secondary">
+                    {secteur.secteur}
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button variant="outline" asChild>
+                <Link to="/secteurs">
+                  Voir tous les secteurs
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
