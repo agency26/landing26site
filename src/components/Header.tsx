@@ -17,10 +17,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[hsl(var(--dark-bg))] backdrop-blur supports-[backdrop-filter]:bg-[hsl(var(--dark-bg))]/95">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold">
+          <span className="text-xl font-bold text-white">
             Landing<span className="text-primary">26</span>
           </span>
         </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             <Link
               key={link.href}
               to={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-secondary"
+              className="text-sm font-medium text-gray-300 transition-colors hover:text-secondary"
             >
               {link.name}
             </Link>
@@ -44,7 +44,7 @@ const Header = () => {
             variant="ghost"
             size="sm"
             asChild
-            className="text-secondary hover:text-secondary/80"
+            className="text-secondary hover:bg-white/10 hover:text-secondary/80"
           >
             <a
               href="https://wa.me/33768410643?text=Bonjour"
@@ -72,7 +72,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="text-white md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -86,13 +86,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="border-t border-border/50 bg-card md:hidden">
+        <div className="border-t border-white/10 bg-[hsl(var(--gray-bg))] md:hidden">
           <div className="container mx-auto flex flex-col space-y-4 px-4 py-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-secondary"
+                className="text-sm font-medium text-gray-300 transition-colors hover:text-secondary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
@@ -103,7 +103,7 @@ const Header = () => {
                 variant="outline"
                 size="sm"
                 asChild
-                className="justify-start"
+                className="justify-start border-white/20 text-white hover:bg-white/10"
               >
                 <a
                   href="https://wa.me/33768410643?text=Bonjour"
