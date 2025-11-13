@@ -7,15 +7,15 @@ import Footer from "@/components/Footer";
 const Offre = () => {
   const included = [
     "Design sur mesure premium fintech",
-    "SEO technique complet (meta, structure, vitesse)",
+    "SEO de base inclus (meta, structure, vitesse)",
     "Responsive mobile-first parfait",
     "Copywriting optimisé avec IA",
     "Formulaire de contact fonctionnel",
     "Hébergement inclus",
     "Analyse de performance intégrée",
+    "2 révisions post-livraison",
     "Support 7 jours après livraison",
     "Export statique pour déploiement",
-    "Structured data JSON-LD",
   ];
 
   const comparison = [
@@ -31,11 +31,11 @@ const Offre = () => {
     },
     {
       feature: "Révisions incluses",
-      landing26: "2 cycles",
+      landing26: "2 post-livraison",
       agency: "1-2 cycles",
     },
     {
-      feature: "SEO technique",
+      feature: "SEO de base",
       landing26: "Inclus",
       agency: "Option payante",
     },

@@ -62,15 +62,15 @@ const Tarifs = () => {
                 <div className="mb-8 space-y-3">
                   {[
                     "Design sur mesure premium fintech",
-                    "SEO technique complet",
+                    "SEO de base inclus",
                     "Responsive mobile-first",
                     "Copywriting optimisé IA",
                     "Hébergement inclus",
                     "Formulaire de contact",
                     "Analyse de performance",
+                    "2 révisions post-livraison",
                     "Support 7 jours post-livraison",
                     "Export statique pour Vercel/Hostinger",
-                    "2 cycles de révision inclus",
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
