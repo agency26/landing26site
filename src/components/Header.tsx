@@ -47,7 +47,7 @@ const Header = () => {
             className="text-secondary hover:text-secondary/80"
           >
             <a
-              href="https://wa.me/972555002400?text=Bonjour"
+              href="https://wa.me/33768410643?text=Bonjour"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -106,7 +106,7 @@ const Header = () => {
                 className="justify-start"
               >
                 <a
-                  href="https://wa.me/972555002400?text=Bonjour"
+                  href="https://wa.me/33768410643?text=Bonjour"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

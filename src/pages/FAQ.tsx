@@ -138,7 +138,7 @@ const FAQ = () => {
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a
-                  href="https://wa.me/972555002400?text=Bonjour, j'ai une question"
+                  href="https://wa.me/33768410643?text=Bonjour, j'ai une question"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

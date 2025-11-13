@@ -127,7 +127,7 @@ const Index = () => {
                 className="border-secondary/50 text-lg hover:bg-secondary/10"
               >
                 <a
-                  href="https://wa.me/972555002400?text=Bonjour"
+                  href="https://wa.me/33768410643?text=Bonjour"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -156,7 +156,7 @@ const Contact = () => {
                         </p>
                         <Button variant="outline" size="sm" asChild>
                           <a
-                            href="https://wa.me/972555002400?text=Bonjour"
+                            href="https://wa.me/33768410643?text=Bonjour"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

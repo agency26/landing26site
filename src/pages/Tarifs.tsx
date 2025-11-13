@@ -131,7 +131,7 @@ const Tarifs = () => {
               </p>
               <Button variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
                 <a
-                  href="https://wa.me/972555002400?text=Bonjour, j'ai besoin d'un devis personnalisé"
+                  href="https://wa.me/33768410643?text=Bonjour, j'ai besoin d'un devis personnalisé"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
