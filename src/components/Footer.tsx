@@ -12,7 +12,7 @@ const Footer = () => {
               Landing<span className="text-primary">26</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Landing page IA premium en 3 jours pour 499 € HT.
+              Landing page IA premium en 3 jours pour <span className="whitespace-nowrap">499 € HT</span>.
             </p>
             <div className="mt-4 flex gap-3">
               <a

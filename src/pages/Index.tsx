@@ -96,7 +96,7 @@ const Index = () => {
             </div>
             
             <h1 className="mb-6 animate-fade-in-up">
-              Votre landing page pro en 3 jours — <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent">499 € HT</span>
+              Votre landing page pro en 3 jours — <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent whitespace-nowrap">499 € HT</span>
             </h1>
             
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
