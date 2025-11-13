@@ -129,7 +129,7 @@ const Tarifs = () => {
                 Vous avez besoin de fonctionnalités spécifiques ou d'un projet plus complexe ?
                 Contactez-nous pour un devis personnalisé.
               </p>
-              <Button variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
+              <Button variant="secondary" asChild>
                 <a
                   href="https://wa.me/33768410643?text=Bonjour, j'ai besoin d'un devis personnalisé"
                   target="_blank"

@@ -150,9 +150,7 @@ const Process = () => {
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-xl font-semibold">Communication</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Point quotidien par email</li>
                     <li>• Disponible sur WhatsApp</li>
-                    <li>• Maquette partagée sur Figma</li>
                     <li>• Preview live dès J2</li>
                   </ul>
                 </CardContent>
@@ -162,7 +160,6 @@ const Process = () => {
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-xl font-semibold">Révisions</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• 1 cycle de révision design (J1)</li>
                     <li>• 1 cycle de révision dev (J3)</li>
                     <li>• Modifications mineures incluses</li>
                     <li>• Changements majeurs = sur devis</li>
@@ -176,8 +173,6 @@ const Process = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Code source complet</li>
                     <li>• Export statique prêt à déployer</li>
-                    <li>• Documentation technique</li>
-                    <li>• Accès GitHub (option)</li>
                   </ul>
                 </CardContent>
               </Card>
