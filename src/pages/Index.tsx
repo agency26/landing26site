@@ -90,7 +90,7 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-border bg-[hsl(var(--dark-bg))]">
+      <section className="relative overflow-hidden border-b border-border bg-white">
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
@@ -98,11 +98,11 @@ const Index = () => {
               <span>+100 landing pages livrées</span>
             </div>
             
-            <h1 className="mb-6 animate-fade-in-up text-white">
+            <h1 className="mb-6 animate-fade-in-up">
               Votre landing page pro en 3 jours — <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent whitespace-nowrap">499 € HT</span>
             </h1>
             
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300 md:text-xl">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
               Design premium + SEO + IA. Livraison express pour entrepreneurs pressés.
               Pas de blabla, juste des résultats.
             </p>
@@ -127,7 +127,7 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white text-white hover:bg-white hover:text-[hsl(var(--dark-bg))]"
+                className="border-secondary/50 text-lg hover:bg-secondary/10"
               >
                 <a
                   href="https://wa.me/33768410643?text=Bonjour"
@@ -140,7 +140,7 @@ const Index = () => {
               </Button>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-secondary" />
                 <span>SEO-first</span>
