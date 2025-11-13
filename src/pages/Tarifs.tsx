@@ -4,30 +4,23 @@ import { GradientButton } from "@/components/ui/gradient-button";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 const Tarifs = () => {
-  const addons = [
-    {
-      title: "Pages supplémentaires",
-      price: "49 € HT",
-      suffix: "/ page",
-      description: "Page About, Services, etc.",
-    },
-    {
-      title: "Maintenance mensuelle",
-      price: "19 € HT",
-      suffix: "/ mois",
-      description: "Updates, corrections, support prioritaire",
-    },
-    {
-      title: "SEO avancé",
-      price: "99 € HT",
-      description: "Audit complet + optimisations poussées",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const addons = [{
+    title: "Pages supplémentaires",
+    price: "49 € HT",
+    suffix: "/ page",
+    description: "Page About, Services, etc."
+  }, {
+    title: "Maintenance mensuelle",
+    price: "19 € HT",
+    suffix: "/ mois",
+    description: "Updates, corrections, support prioritaire"
+  }, {
+    title: "SEO avancé",
+    price: "99 € HT",
+    description: "Audit complet + optimisations poussées"
+  }];
+  return <div className="min-h-screen">
       <Header />
 
       {/* Hero */}
@@ -60,34 +53,15 @@ const Tarifs = () => {
                 </div>
 
                 <div className="mb-8 space-y-3">
-                  {[
-                    "Design sur mesure premium fintech",
-                    "SEO de base inclus",
-                    "Responsive mobile-first",
-                    "Copywriting optimisé IA",
-                    "Hébergement inclus",
-                    "Formulaire de contact",
-                    "Analyse de performance",
-                    "2 révisions post-livraison",
-                    "Support 7 jours post-livraison",
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                  {["Design sur mesure premium fintech", "SEO de base inclus", "Responsive mobile-first", "Copywriting optimisé IA", "Hébergement inclus", "Formulaire de contact", "Analyse de performance", "2 révisions post-livraison", "Support 7 jours post-livraison"].map((item, index) => <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                       <span className="text-foreground">{item}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
 
                 <div className="text-center">
-                  <GradientButton
-                    size="lg"
-                    asChild
-                  >
-                    <a
-                      href="https://calendly.com/kabalodov/rdv"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                  <GradientButton size="lg" asChild>
+                    <a href="https://calendly.com/kabalodov/rdv" target="_blank" rel="noopener noreferrer">
                       Commander maintenant
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -111,8 +85,7 @@ const Tarifs = () => {
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
-              {addons.map((addon, index) => (
-                <Card key={index} className="border border-white/10 bg-dark">
+              {addons.map((addon, index) => <Card key={index} className="border border-white/10 bg-dark">
                   <CardContent className="pt-6">
                     <div className="mb-2 flex items-baseline justify-between">
                       <h3 className="text-xl font-semibold text-white">{addon.title}</h3>
@@ -123,8 +96,7 @@ const Tarifs = () => {
                     </div>
                     <p className="text-gray-300">{addon.description}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
 
             <div className="mt-8 rounded-lg border border-secondary/20 bg-secondary/5 p-6">
@@ -134,11 +106,7 @@ const Tarifs = () => {
                 Contactez-nous pour un devis personnalisé.
               </p>
               <Button variant="secondary" asChild>
-                <a
-                  href="https://wa.me/33768410643?text=Bonjour, j'ai besoin d'un devis personnalisé"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://wa.me/33768410643?text=Bonjour, j'ai besoin d'un devis personnalisé" target="_blank" rel="noopener noreferrer">
                   Demander un devis
                 </a>
               </Button>
@@ -180,7 +148,7 @@ const Tarifs = () => {
 
             <div className="mt-8 text-center">
               <p className="text-sm text-muted-foreground">
-                Moyens de paiement acceptés : Virement bancaire, Stripe (carte), PayPal
+                Moyens de paiement acceptés : Virement bancaire et Lien de paiements                     
               </p>
             </div>
           </div>
@@ -188,8 +156,6 @@ const Tarifs = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Tarifs;
