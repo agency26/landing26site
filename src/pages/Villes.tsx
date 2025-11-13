@@ -30,28 +30,28 @@ const Villes = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="border-b border-border bg-dark py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative overflow-hidden border-b border-border bg-white">
+        <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
               <MapPin className="h-4 w-4" />
               <span>{villes.length} villes couvertes</span>
             </div>
             
-            <h1 className="mb-6 text-white">
+            <h1 className="mb-6">
               Création de landing page dans toute la France
             </h1>
             
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-200">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
               Landing26 intervient dans toutes les grandes villes de France. 
-              Sélectionnez votre ville pour découvrir notre offre locale.
+              Livraison en 3 jours pour <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent font-semibold">299€ HT</span>.
             </p>
           </div>
         </div>
       </section>
 
       {/* Cities Grid */}
-      <section className="bg-white py-20">
+      <section className="bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -61,22 +61,22 @@ const Villes = () => {
                   to={`/ville/${ville.slug}`}
                   className="group"
                 >
-                  <Card className="border-border bg-white transition-all hover:border-secondary/50 hover:shadow-md">
+                  <Card className="border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-lg">
                     <CardContent className="flex items-center justify-between p-4">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/20">
                           <MapPin className="h-5 w-5 text-secondary" />
                         </div>
                         <div>
-                          <div className="font-semibold text-foreground group-hover:text-secondary">
+                          <div className="font-semibold text-white group-hover:text-secondary">
                             {ville.ville}
                           </div>
-                          <div className="text-sm text-muted-foreground">
+                          <div className="text-sm text-gray-300">
                             {ville.region}
                           </div>
                         </div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
+                      <ArrowRight className="h-4 w-4 text-gray-400 opacity-0 transition-opacity group-hover:opacity-100" />
                     </CardContent>
                   </Card>
                 </Link>

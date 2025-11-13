@@ -30,28 +30,28 @@ const Secteurs = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="border-b border-border bg-dark py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative overflow-hidden border-b border-border bg-white">
+        <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
               <Briefcase className="h-4 w-4" />
               <span>{secteurs.length} secteurs d'activité</span>
             </div>
             
-            <h1 className="mb-6 text-white">
+            <h1 className="mb-6">
               Landing page adaptée à votre secteur
             </h1>
             
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-200">
-              Landing26 crée des landing pages sur mesure pour chaque secteur d'activité. 
-              Sélectionnez votre métier pour découvrir notre approche spécialisée.
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+              Landing26 crée des landing pages sur mesure pour chaque secteur. 
+              Livraison en 3 jours pour <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent font-semibold">299€ HT</span>.
             </p>
           </div>
         </div>
       </section>
 
       {/* Sectors Grid */}
-      <section className="bg-white py-20">
+      <section className="bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -61,17 +61,17 @@ const Secteurs = () => {
                   to={`/secteur/${secteur.slug}`}
                   className="group"
                 >
-                  <Card className="border-border bg-white transition-all hover:border-secondary/50 hover:shadow-md">
+                  <Card className="border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-lg">
                     <CardContent className="flex items-center justify-between p-4">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/20">
                           <Briefcase className="h-5 w-5 text-secondary" />
                         </div>
-                        <div className="font-semibold text-foreground group-hover:text-secondary">
+                        <div className="font-semibold text-white group-hover:text-secondary">
                           {secteur.secteur}
                         </div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
+                      <ArrowRight className="h-4 w-4 text-gray-400 opacity-0 transition-opacity group-hover:opacity-100" />
                     </CardContent>
                   </Card>
                 </Link>

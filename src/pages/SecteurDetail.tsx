@@ -46,15 +46,15 @@ const SecteurDetail = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="border-b border-border bg-dark py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative overflow-hidden border-b border-border bg-white">
+        <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl">
-            <div className="mb-6 flex items-center gap-2 text-gray-300">
-              <Link to="/" className="hover:text-white">Accueil</Link>
+            <div className="mb-6 flex items-center gap-2 text-muted-foreground">
+              <Link to="/" className="hover:text-foreground">Accueil</Link>
               <span>/</span>
-              <Link to="/secteurs" className="hover:text-white">Secteurs</Link>
+              <Link to="/secteurs" className="hover:text-foreground">Secteurs</Link>
               <span>/</span>
-              <span className="text-white">{secteur.secteur}</span>
+              <span className="text-foreground">{secteur.secteur}</span>
             </div>
             
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
@@ -62,11 +62,11 @@ const SecteurDetail = () => {
               <span>Secteur d'activité</span>
             </div>
             
-            <h1 className="mb-6 text-white">
+            <h1 className="mb-6">
               Landing page pour {secteur.secteur}
             </h1>
             
-            <p className="mb-8 text-lg text-gray-200">
+            <p className="mb-8 text-lg text-muted-foreground md:text-xl">
               {secteur.intro}
             </p>
 
@@ -87,14 +87,14 @@ const SecteurDetail = () => {
       </section>
 
       {/* Business Needs Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8">Besoins spécifiques du secteur {secteur.secteur}</h2>
+            <h2 className="mb-8 text-white">Besoins spécifiques du secteur {secteur.secteur}</h2>
             
-            <Card className="border-border bg-muted">
+            <Card className="border-white/10 bg-white/5 backdrop-blur-sm">
               <CardContent className="pt-6">
-                <p className="text-lg text-foreground">{secteur.besoins_metier}</p>
+                <p className="text-lg text-white">{secteur.besoins_metier}</p>
               </CardContent>
             </Card>
           </div>
@@ -102,14 +102,14 @@ const SecteurDetail = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="border-b border-border bg-muted py-20">
+      <section className="border-b border-border bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8">Avantages d'un site Landing26</h2>
             
             <div className="grid gap-6 md:grid-cols-2">
               {secteur.avantages_site.split(',').map((avantage, index) => (
-                <Card key={index} className="border-border bg-white">
+                <Card key={index} className="border-border bg-card">
                   <CardContent className="flex items-start gap-3 pt-6">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                     <span className="text-foreground">{avantage.trim()}</span>
@@ -122,14 +122,14 @@ const SecteurDetail = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border bg-gray py-20">
+      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-center text-white">Notre offre pour {secteur.secteur}</h2>
             
-            <Card className="border border-white/10 bg-dark">
+            <Card className="border-white/10 bg-white/5 backdrop-blur-sm">
               <CardContent className="p-8">
-                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-white/10 pb-8 md:flex-row">
+                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-white/20 pb-8 md:flex-row">
                   <div>
                     <h3 className="mb-2 text-2xl font-bold text-white">Landing Page IA</h3>
                     <p className="text-gray-300">Livraison en 3 jours</p>
@@ -155,7 +155,7 @@ const SecteurDetail = () => {
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                      <span className="text-gray-100">{item}</span>
+                      <span className="text-white">{item}</span>
                     </div>
                   ))}
                 </div>
