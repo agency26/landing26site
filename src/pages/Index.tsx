@@ -12,6 +12,7 @@ import {
   Clock,
   Euro,
   MessageCircle,
+  Star,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -95,7 +96,7 @@ const Index = () => {
             </div>
             
             <h1 className="mb-6 animate-fade-in-up">
-              Votre landing page pro en 3 jours — 299 € HT
+              Votre landing page pro en 3 jours — <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent">299 € HT</span>
             </h1>
             
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
@@ -307,6 +308,11 @@ const Index = () => {
                 className="border border-white/10 bg-dark transition-all hover:border-secondary/30 hover:shadow-md"
               >
                 <CardContent className="pt-6">
+                  <div className="mb-4 flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-primary-orange text-primary-orange" />
+                    ))}
+                  </div>
                   <p className="mb-6 text-gray-200">"{testimonial.content}"</p>
                   <div>
                     <div className="font-semibold text-white">{testimonial.name}</div>
