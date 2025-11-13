@@ -17,10 +17,10 @@ const FAQ = () => {
     },
     {
       question: "Pourquoi choisir Landing26 plutôt qu'une agence web classique ?",
-      answer: "Landing26 combine rapidité, qualité et prix imbattable. Là où une agence classique facture 2000-5000 € et livre en 2-4 semaines, nous livrons en 3 jours pour 299 € HT. Nous utilisons l'IA pour accélérer le processus sans compromettre la qualité du design ou du SEO.",
+      answer: "Landing26 combine rapidité, qualité et prix imbattable. Là où une agence classique facture 2000-5000 € et livre en 2-4 semaines, nous livrons en 3 jours pour 499 € HT. Nous utilisons l'IA pour accélérer le processus sans compromettre la qualité du design ou du SEO.",
     },
     {
-      question: "Le prix de 299 € HT inclut-il vraiment tout ?",
+      question: "Le prix de 499 € HT inclut-il vraiment tout ?",
       answer: "Oui ! Le prix inclut : design sur mesure premium, développement responsive, SEO technique complet, copywriting optimisé IA, formulaire de contact, hébergement 1 mois, analyse de performance, 2 cycles de révision, et support 7 jours. Seules les options supplémentaires (pages additionnelles, blog, maintenance) sont en sus.",
     },
     {

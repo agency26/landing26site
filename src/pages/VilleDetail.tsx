@@ -37,7 +37,7 @@ const VilleDetail = () => {
     },
     "offers": {
       "@type": "Offer",
-      "price": "299",
+      "price": "499",
       "priceCurrency": "EUR"
     }
   };
@@ -128,7 +128,7 @@ const VilleDetail = () => {
                   </div>
                   <div className="text-center">
                     <div className="mb-1 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-4xl font-bold text-transparent">
-                      299 €
+                      499 €
                     </div>
                     <div className="text-sm text-muted-foreground">HT</div>
                   </div>

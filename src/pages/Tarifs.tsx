@@ -51,7 +51,7 @@ const Tarifs = () => {
                     Offre principale
                   </div>
                   <h2 className="mb-2">Landing Page IA</h2>
-                  <div className="mb-2 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-6xl font-bold text-transparent">299 €</div>
+                  <div className="mb-2 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-6xl font-bold text-transparent">499 €</div>
                   <div className="mb-4 text-muted-foreground">HT - Livraison en 3 jours</div>
                 </div>
 
@@ -158,7 +158,7 @@ const Tarifs = () => {
                   <div className="mb-3 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-4xl font-bold text-transparent">100%</div>
                   <h3 className="mb-2 font-semibold">À la commande</h3>
                   <p className="text-sm text-muted-foreground">
-                    Paiement unique de 299 € HT pour lancer le projet. On démarre dès réception et vous livrez en 3 jours maximum.
+                    Paiement unique de 499 € HT pour lancer le projet. On démarre dès réception et vous livrez en 3 jours maximum.
                   </p>
                 </CardContent>
               </Card>

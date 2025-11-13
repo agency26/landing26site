@@ -26,7 +26,7 @@ const Offre = () => {
     },
     {
       feature: "Prix",
-      landing26: "299 € HT",
+      landing26: "499 € HT",
       agency: "2000-5000 €",
     },
     {
@@ -71,7 +71,7 @@ const Offre = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="mb-8 text-center">
                   <h2 className="mb-2">Landing Page IA</h2>
-                  <div className="mb-4 text-5xl font-bold text-primary">299 € HT</div>
+                  <div className="mb-4 text-5xl font-bold text-primary">499 € HT</div>
                   <p className="text-muted-foreground">
                     Livraison garantie en 3 jours ouvrés
                   </p>

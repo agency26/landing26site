@@ -11,7 +11,7 @@ const Secteurs = () => {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Création de landing page par secteur - Landing26",
-    "description": "Découvrez nos services de création de landing page adaptés à chaque secteur d'activité. Livraison en 3 jours, 299€ HT.",
+    "description": "Découvrez nos services de création de landing page adaptés à chaque secteur d'activité. Livraison en 3 jours, 499€ HT.",
     "provider": {
       "@type": "Organization",
       "name": "Landing26",
@@ -44,7 +44,7 @@ const Secteurs = () => {
             
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
               Landing26 crée des landing pages sur mesure pour chaque secteur. 
-              Livraison en 3 jours pour <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent font-semibold">299€ HT</span>.
+              Livraison en 3 jours pour <span className="bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-transparent font-semibold">499€ HT</span>.
             </p>
           </div>
         </div>
