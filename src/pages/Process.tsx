@@ -27,7 +27,7 @@ const Process = () => {
       description: "Création de la maquette premium selon vos recommandations.",
       tasks: [
         "Design system (couleurs, typo, composants)",
-        "Maquette Figma haute fidélité",
+        "Maquette haute fidélité",
         "Application de vos recommandations",
         "Préparation pour développement",
       ],
