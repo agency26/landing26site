@@ -111,7 +111,7 @@ const SEOGuide = () => {
               <li>D'améliorer la structure</li>
             </ul>
 
-            <h2>🟢 Conclusion</h2>
+            <h2>Conclusion</h2>
             <p>Une landing page peut devenir un levier SEO puissant, à condition de respecter :</p>
             <ul>
               <li>Un mot-clé clair</li>

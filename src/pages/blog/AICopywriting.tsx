@@ -129,7 +129,7 @@ const AICopywriting = () => {
             </ul>
             <p>Cela donne des landing pages plus fluides et plus professionnelles.</p>
 
-            <h2>🟢 Conclusion</h2>
+            <h2>Conclusion</h2>
             <p>
               L'IA ne remplace pas l'humain : elle augmente ses capacités.
               Elle permet de créer des landing pages plus efficaces, plus rapides à produire, et surtout beaucoup plus performantes.

@@ -129,7 +129,7 @@ const ConversionOptimization = () => {
             </ul>
             <p>L'objectif : optimiser continuellement votre taux de conversion.</p>
 
-            <h2>🟢 Conclusion</h2>
+            <h2>Conclusion</h2>
             <p>
               Une landing page efficace repose sur le design, la clarté, la confiance et la vitesse. En appliquant ces 10 techniques, vous maximisez votre taux de conversion et augmentez la valeur de chaque visiteur.
             </p>
