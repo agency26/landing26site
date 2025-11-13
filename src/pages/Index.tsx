@@ -387,17 +387,20 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-3">
-              {secteurs.slice(0, 12).map((secteur, index) => (
-                <Link
-                  key={secteur.slug}
-                  to={`/secteur/${secteur.slug}`}
-                  className={`group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
-                >
-                  <span className="text-foreground group-hover:text-secondary">
-                    {secteur.secteur}
-                  </span>
-                </Link>
-              ))}
+              {secteurs
+                .filter((secteur) => secteur.secteur !== 'Comptable' && secteur.secteur !== 'Expert SEO')
+                .slice(0, 12)
+                .map((secteur, index) => (
+                  <Link
+                    key={secteur.slug}
+                    to={`/secteur/${secteur.slug}`}
+                    className={`group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
+                  >
+                    <span className="text-foreground group-hover:text-secondary">
+                      {secteur.secteur}
+                    </span>
+                  </Link>
+                ))}
             </div>
 
             <div className="mt-8 text-center">
