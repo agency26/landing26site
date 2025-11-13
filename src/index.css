@@ -21,9 +21,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
     
-    /* Airwallex Red - Primary CTA */
+    /* Airwallex Gradient - Red to Orange */
     --primary: 4 100% 61%;        /* #FF4338 - Airwallex Red */
+    --primary-orange: 14 100% 57%; /* #FF6B3D - Orange */
     --primary-foreground: 0 0% 100%;
+    --primary-gradient: linear-gradient(135deg, hsl(4 100% 61%), hsl(14 100% 57%));
     
     /* Airwallex Blue - Subtle Accents */
     --secondary: 215 86% 52%;     /* #1F6FEB - Airwallex Blue */
@@ -48,7 +50,7 @@ All colors MUST be HSL.
     
     --radius: 1rem;               /* 16px - Premium rounded */
     
-    /* Custom Design Tokens - Light Airwallex Style */
+    /* Custom Design Tokens - Airwallex Style */
     --hero-gradient: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 100%));
     --card-hover: 0 0% 96%;
     --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.04);
@@ -56,9 +58,11 @@ All colors MUST be HSL.
     --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.08);
     --transition-smooth: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Dark sections for contrast */
-    --dark-section-bg: 0 0% 4%;
-    --dark-section-fg: 0 0% 100%;
+    /* Dark sections for contrast - Airwallex style */
+    --dark-bg: 222 47% 11%;       /* #1a1f2e - Dark blue-gray */
+    --dark-fg: 0 0% 100%;
+    --gray-bg: 220 13% 18%;       /* #292d39 - Medium gray */
+    --gray-fg: 0 0% 95%;
   }
 }
 

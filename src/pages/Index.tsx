@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Zap,
@@ -103,10 +104,10 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button
+              <GradientButton
                 size="lg"
                 asChild
-                className="bg-primary text-lg text-primary-foreground hover:bg-primary/90"
+                className="text-lg"
               >
                 <a
                   href="https://calendly.com/kabalodov/rdv"
@@ -116,7 +117,7 @@ const Index = () => {
                   Réserver un créneau
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
-              </Button>
+              </GradientButton>
               
               <Button
                 size="lg"
@@ -154,7 +155,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="border-b border-border bg-muted py-20">
+      <section className="border-b border-border bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4">Pourquoi Landing26 ?</h2>
@@ -183,28 +184,28 @@ const Index = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-dark py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4">L'offre Landing26</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="mb-4 text-white">L'offre Landing26</h2>
+              <p className="text-lg text-gray-300">
                 Tout ce dont vous avez besoin. Rien de superflu.
               </p>
             </div>
 
-            <Card className="border-2 border-primary/20 bg-muted">
+            <Card className="border border-gray/30 bg-gray">
               <CardContent className="p-8 md:p-12">
-                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-border/50 pb-8 md:flex-row">
+                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-white/10 pb-8 md:flex-row">
                   <div>
-                    <h3 className="mb-2 text-2xl font-bold">Landing Page IA</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="mb-2 text-2xl font-bold text-white">Landing Page IA</h3>
+                    <p className="text-gray-300">
                       Design premium • SEO • Livraison 3 jours
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="mb-1 text-4xl font-bold text-primary">299 €</div>
-                    <div className="text-sm text-muted-foreground">HT</div>
+                    <div className="mb-1 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-4xl font-bold text-transparent">299 €</div>
+                    <div className="text-sm text-gray-300">HT</div>
                   </div>
                 </div>
 
@@ -221,16 +222,15 @@ const Index = () => {
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="text-gray-100">{item}</span>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-8 text-center">
-                  <Button
+                  <GradientButton
                     size="lg"
                     asChild
-                    className="bg-primary text-primary-foreground hover:bg-primary/90"
                   >
                     <a
                       href="https://calendly.com/kabalodov/rdv"
@@ -240,7 +240,7 @@ const Index = () => {
                       Commander maintenant
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
-                  </Button>
+                  </GradientButton>
                 </div>
               </CardContent>
             </Card>
@@ -291,11 +291,11 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-gray py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h2 className="mb-4">Ils nous font confiance</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-white">Ils nous font confiance</h2>
+            <p className="text-lg text-gray-300">
               Résultats réels, clients satisfaits.
             </p>
           </div>
@@ -304,13 +304,13 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border-border bg-muted transition-all hover:border-secondary/50 hover:shadow-md"
+                className="border border-white/10 bg-dark transition-all hover:border-secondary/30 hover:shadow-md"
               >
                 <CardContent className="pt-6">
-                  <p className="mb-6 text-muted-foreground">"{testimonial.content}"</p>
+                  <p className="mb-6 text-gray-200">"{testimonial.content}"</p>
                   <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="font-semibold text-white">{testimonial.name}</div>
+                    <div className="text-sm text-gray-400">
                       {testimonial.role}
                     </div>
                   </div>
@@ -331,10 +331,9 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button
+              <GradientButton
                 size="lg"
                 asChild
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <a
                   href="https://calendly.com/kabalodov/rdv"
@@ -344,7 +343,7 @@ const Index = () => {
                   <Clock className="mr-2 h-5 w-5" />
                   Réserver un créneau
                 </a>
-              </Button>
+              </GradientButton>
               
               <Button size="lg" variant="outline" asChild>
                 <Link to="/tarifs">
