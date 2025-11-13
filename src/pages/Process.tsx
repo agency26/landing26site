@@ -24,12 +24,12 @@ const Process = () => {
       icon: Palette,
       title: "Design & Maquette",
       duration: "Journée complète",
-      description: "Création de la maquette premium.",
+      description: "Création de la maquette premium selon vos recommandations.",
       tasks: [
         "Design system (couleurs, typo, composants)",
         "Maquette Figma haute fidélité",
-        "1 cycle de révision inclus",
-        "Validation avant développement",
+        "Application de vos recommandations",
+        "Préparation pour développement",
       ],
     },
     {
@@ -50,12 +50,12 @@ const Process = () => {
       icon: Rocket,
       title: "Livraison & Go Live",
       duration: "Demi-journée",
-      description: "Tests finaux et mise en ligne.",
+      description: "Livraison selon vos recommandations et mise en ligne.",
       tasks: [
         "Tests cross-browser et mobile",
         "Optimisations Core Web Vitals",
-        "Mise en ligne sur votre domaine",
-        "Formation express + documentation",
+        "Livraison du site finalisé",
+        "Mise en ligne + documentation",
       ],
     },
   ];
@@ -160,8 +160,8 @@ const Process = () => {
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-xl font-semibold">Révisions</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• 1 cycle de révision dev (J3)</li>
-                    <li>• Modifications mineures incluses</li>
+                    <li>• 2 révisions post-livraison</li>
+                    <li>• Ajustements design, texte, fonctionnalités</li>
                     <li>• Changements majeurs = sur devis</li>
                   </ul>
                 </CardContent>

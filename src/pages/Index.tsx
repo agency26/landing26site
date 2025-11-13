@@ -213,7 +213,7 @@ const Index = () => {
                 <div className="grid gap-4 md:grid-cols-2">
                   {[
                     "Design sur mesure premium",
-                    "SEO technique complet",
+                    "SEO de base inclus",
                     "Responsive mobile-first",
                     "Copywriting optimisé IA",
                     "Hébergement inclus",

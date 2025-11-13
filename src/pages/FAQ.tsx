@@ -13,7 +13,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Combien de temps faut-il pour créer une landing page avec Landing26 ?",
-      answer: "Nous livrons votre landing page en 3 jours ouvrés maximum. Le processus est le suivant : J0 (Brief), J1 (Design & validation), J2 (Développement), J3 (Tests & mise en ligne). Vous recevez votre site prêt à convertir en moins d'une semaine.",
+      answer: "Nous livrons votre landing page en 3 jours ouvrés maximum. Le processus est le suivant : J0 (Brief), J1 (Design), J2 (Développement), J3 (Tests & livraison). Le site est livré à J3 selon vos recommandations (couleurs, texte, etc.). Vous recevez votre site prêt à convertir en moins d'une semaine.",
     },
     {
       question: "Pourquoi choisir Landing26 plutôt qu'une agence web classique ?",
@@ -21,15 +21,15 @@ const FAQ = () => {
     },
     {
       question: "Le prix de 499 € HT inclut-il vraiment tout ?",
-      answer: "Oui ! Le prix inclut : design sur mesure premium, développement responsive, SEO technique complet, copywriting optimisé IA, formulaire de contact, hébergement, analyse de performance, 2 cycles de révision, et support 7 jours. Seules les options supplémentaires (pages additionnelles, blog, maintenance) sont en sus.",
+      answer: "Oui ! Le prix inclut : design sur mesure premium, développement responsive, SEO de base pour landing page, copywriting optimisé IA, formulaire de contact, hébergement, analyse de performance, 2 révisions post-livraison, et support 7 jours. Le SEO avancé est disponible en option à 99 € HT. Seules les options supplémentaires (pages additionnelles, blog, maintenance) sont en sus.",
     },
     {
       question: "Comment fonctionne le SEO sur mes landing pages Landing26 ?",
-      answer: "Chaque landing page est optimisée SEO dès la conception : structure HTML sémantique, balises title et meta uniques, données structurées JSON-LD, optimisation des images avec alt text, vitesse de chargement optimale (Core Web Vitals), sitemap XML, et robots.txt. Votre site est prêt à être indexé et à ranker sur Google dès le jour 1.",
+      answer: "Chaque landing page inclut un SEO de base : structure HTML sémantique, balises title et meta uniques, optimisation des images avec alt text, vitesse de chargement optimale (Core Web Vitals). Pour un SEO avancé incluant données structurées JSON-LD complètes, stratégie de mots-clés approfondie, et optimisations poussées, optez pour notre option SEO avancé à 99 € HT.",
     },
     {
       question: "Puis-je modifier ma landing page après la livraison ?",
-      answer: "Absolument ! Vous recevez le code source complet et l'export statique. Vous pouvez modifier le contenu vous-même ou nous demander des modifications. Le support 7 jours post-livraison inclut les corrections de bugs. Les modifications supplémentaires peuvent être facturées selon leur ampleur, ou vous pouvez souscrire à notre maintenance mensuelle (99 € HT/mois).",
+      answer: "Absolument ! Vous recevez le code source complet et l'export statique. Vous pouvez modifier le contenu vous-même ou nous demander des modifications. Le support 7 jours post-livraison inclut les corrections de bugs. Les modifications supplémentaires peuvent être facturées selon leur ampleur, ou vous pouvez souscrire à notre maintenance mensuelle (19 € HT/mois).",
     },
     {
       question: "Qu'est-ce qu'une landing page et pourquoi en ai-je besoin ?",
@@ -49,7 +49,7 @@ const FAQ = () => {
     },
     {
       question: "Combien de révisions sont incluses dans le prix ?",
-      answer: "Le prix inclut 2 cycles complets de révision : 1 cycle après la présentation du design (J1) et 1 cycle après le développement (J3). Les révisions mineures (textes, couleurs, ajustements) sont incluses. Les changements majeurs de structure ou de concept peuvent nécessiter un ajustement tarifaire.",
+      answer: "2 révisions sont incluses post-livraison. Ces révisions portent sur des ajustements de design, textes, ou fonctionnalités. Les demandes de refonte complète ou de nouvelles fonctionnalités majeures ne sont pas considérées comme des révisions et feront l'objet d'un devis séparé.",
     },
     {
       question: "Puis-je voir des exemples de landing pages que vous avez créées ?",
@@ -57,7 +57,7 @@ const FAQ = () => {
     },
     {
       question: "Que se passe-t-il si je ne suis pas satisfait du résultat final ?",
-      answer: "Votre satisfaction est notre priorité. Grâce aux 2 cycles de révision inclus et à notre processus de validation à chaque étape (J1 design, J3 avant mise en ligne), vous validez le travail avant la livraison finale. Si malgré tout vous n'êtes pas satisfait, nous travaillons avec vous jusqu'à ce que le résultat corresponde à vos attentes.",
+      answer: "Votre satisfaction est notre priorité. Le site est livré à J3 selon vos recommandations (couleurs, texte, etc.), puis vous disposez de 2 révisions post-livraison pour affiner le résultat. Si malgré tout vous n'êtes pas satisfait, nous travaillons avec vous jusqu'à ce que le résultat corresponde à vos attentes.",
     },
     {
       question: "Faut-il prévoir du contenu avant de commencer (textes, images) ?",
@@ -69,7 +69,7 @@ const FAQ = () => {
     },
     {
       question: "Proposez-vous des services de maintenance après la livraison ?",
-      answer: "Oui ! Le support est inclus 7 jours après livraison (corrections de bugs, questions techniques). Au-delà, vous pouvez souscrire à notre forfait maintenance mensuel (99 € HT/mois) qui inclut : mises à jour de contenu, corrections illimitées, support prioritaire, et optimisations continues. Idéal pour garder votre landing page performante dans la durée.",
+      answer: "Oui ! Le support est inclus 7 jours après livraison (corrections de bugs, questions techniques). Au-delà, vous pouvez souscrire à notre forfait maintenance mensuel (19 € HT/mois) qui inclut : mises à jour de contenu, corrections, support prioritaire, et optimisations continues. Idéal pour garder votre landing page performante dans la durée.",
     },
   ];
 
