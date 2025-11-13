@@ -152,6 +152,7 @@ const Process = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Disponible sur WhatsApp</li>
                     <li>• Preview live dès J2</li>
+                    <li>• Updates quotidiens sur l'avancement</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -172,6 +173,7 @@ const Process = () => {
                   <h3 className="mb-3 text-xl font-semibold">Livrables</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Landing page en ligne</li>
+                    <li>• Page hébergée (connexion du domaine à faire)</li>
                     <li>• Modifications sur demande</li>
                   </ul>
                 </CardContent>
@@ -184,7 +186,6 @@ const Process = () => {
                     <li>• Support 7 jours inclus</li>
                     <li>• Corrections de bugs gratuites</li>
                     <li>• Maintenance sur devis</li>
-                    <li>• Évolutions possibles</li>
                   </ul>
                 </CardContent>
               </Card>
