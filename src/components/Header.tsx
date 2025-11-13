@@ -10,7 +10,6 @@ const Header = () => {
     { name: "Accueil", href: "/" },
     { name: "Offre", href: "/offre" },
     { name: "Process", href: "/process" },
-    { name: "Réalisations", href: "/realisations" },
     { name: "Tarifs", href: "/tarifs" },
     { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
@@ -18,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold">

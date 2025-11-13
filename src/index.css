@@ -10,16 +10,16 @@ All colors MUST be HSL.
   :root {
     /* Fintech Premium Color System - HSL Only */
     
-    /* Base Colors - Deep Black & Pure White */
-    --background: 0 0% 4%;        /* #0A0A0A - Deep black */
-    --foreground: 0 0% 100%;      /* #FFFFFF - Pure white */
+    /* Base Colors - White & Black mix like Airwallex */
+    --background: 0 0% 100%;      /* #FFFFFF - Pure white */
+    --foreground: 0 0% 10%;       /* #1A1A1A - Near black */
     
-    /* Surface Colors - Anthracite */
-    --card: 0 0% 10%;             /* #1A1A1A - Anthracite */
-    --card-foreground: 0 0% 100%;
+    /* Surface Colors - Light Gray & Dark */
+    --card: 0 0% 98%;             /* #FAFAFA - Very light gray */
+    --card-foreground: 0 0% 10%;
     
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
     
     /* Airwallex Red - Primary CTA */
     --primary: 4 100% 61%;        /* #FF4338 - Airwallex Red */
@@ -30,10 +30,10 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 100%;
     
     /* Muted Surfaces */
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 0 0% 96%;            /* #F5F5F5 - Light gray */
+    --muted-foreground: 0 0% 45%;
     
-    /* Accent - Light Gray */
+    /* Accent - Very Light Gray */
     --accent: 0 0% 96%;           /* #F5F5F5 - Light gray */
     --accent-foreground: 0 0% 10%;
     
@@ -41,20 +41,24 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    /* Borders & Inputs - Subtle */
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
+    /* Borders & Inputs - Subtle Light */
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
     --ring: 215 86% 52%;          /* Blue ring */
     
     --radius: 1rem;               /* 16px - Premium rounded */
     
-    /* Custom Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(0 0% 4%), hsl(0 0% 8%));
-    --card-hover: 0 0% 12%;
-    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.2);
-    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.3);
+    /* Custom Design Tokens - Light Airwallex Style */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 100%));
+    --card-hover: 0 0% 96%;
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.04);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.06);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.08);
     --transition-smooth: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Dark sections for contrast */
+    --dark-section-bg: 0 0% 4%;
+    --dark-section-fg: 0 0% 100%;
   }
 }
 

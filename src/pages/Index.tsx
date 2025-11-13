@@ -85,7 +85,7 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-border/50 bg-gradient-to-b from-background to-card">
+      <section className="relative overflow-hidden border-b border-border bg-white">
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
@@ -154,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="border-b border-border/50 bg-background py-20">
+      <section className="border-b border-border bg-muted py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4">Pourquoi Landing26 ?</h2>
@@ -167,7 +167,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="group border-border/50 bg-card transition-all hover:border-secondary/50 hover:bg-card/80"
+                className="group border-border bg-white transition-all hover:border-secondary/50 hover:shadow-md"
               >
                 <CardContent className="pt-6">
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10">
@@ -183,7 +183,7 @@ const Index = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border/50 bg-card py-20">
+      <section className="border-b border-border bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-12 text-center">
@@ -193,7 +193,7 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="border-2 border-primary/20 bg-background">
+            <Card className="border-2 border-primary/20 bg-muted">
               <CardContent className="p-8 md:p-12">
                 <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-border/50 pb-8 md:flex-row">
                   <div>
@@ -249,7 +249,7 @@ const Index = () => {
       </section>
 
       {/* Process Section */}
-      <section className="border-b border-border/50 bg-background py-20">
+      <section className="border-b border-border bg-muted py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4">De zéro à live en 3 jours</h2>
@@ -261,7 +261,7 @@ const Index = () => {
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-4">
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
-                <Card className="border-border/50 bg-card transition-all hover:border-secondary/50">
+                <Card className="border-border bg-white transition-all hover:border-secondary/50 hover:shadow-md">
                   <CardContent className="pt-6">
                     <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-2xl font-bold text-secondary">
                       {step.day}
@@ -291,7 +291,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="border-b border-border/50 bg-card py-20">
+      <section className="border-b border-border bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4">Ils nous font confiance</h2>
@@ -304,7 +304,7 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border-border/50 bg-background transition-all hover:border-secondary/50"
+                className="border-border bg-muted transition-all hover:border-secondary/50 hover:shadow-md"
               >
                 <CardContent className="pt-6">
                   <p className="mb-6 text-muted-foreground">"{testimonial.content}"</p>
@@ -322,7 +322,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-b from-card to-background py-20">
+      <section className="bg-muted py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6">Prêt à lancer votre projet ?</h2>
