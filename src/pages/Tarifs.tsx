@@ -9,12 +9,14 @@ const Tarifs = () => {
   const addons = [
     {
       title: "Pages supplémentaires",
-      price: "49 € HT / page",
+      price: "49 € HT",
+      suffix: "/ page",
       description: "Page About, Services, etc.",
     },
     {
       title: "Maintenance mensuelle",
-      price: "19 € HT / mois",
+      price: "19 € HT",
+      suffix: "/ mois",
       description: "Updates, corrections, support prioritaire",
     },
     {
@@ -51,8 +53,10 @@ const Tarifs = () => {
                     Offre principale
                   </div>
                   <h2 className="mb-2">Landing Page IA</h2>
-                  <div className="mb-2 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-6xl font-bold text-transparent">499 €</div>
-                  <div className="mb-4 text-muted-foreground">HT - Livraison en 3 jours</div>
+                  <div className="mb-2 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-6xl font-bold text-transparent">
+                    <span className="whitespace-nowrap">499 € HT</span>
+                  </div>
+                  <div className="mb-4 text-muted-foreground">Livraison en 3 jours</div>
                 </div>
 
                 <div className="mb-8 space-y-3">
@@ -115,7 +119,8 @@ const Tarifs = () => {
                       <h3 className="text-xl font-semibold text-white">{addon.title}</h3>
                     </div>
                     <div className="mb-3 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-lg font-bold text-transparent">
-                      {addon.price}
+                      <span className="whitespace-nowrap">{addon.price}</span>
+                      {addon.suffix && <span className="ml-1">{addon.suffix}</span>}
                     </div>
                     <p className="text-gray-300">{addon.description}</p>
                   </CardContent>
@@ -158,7 +163,7 @@ const Tarifs = () => {
                   <div className="mb-3 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-4xl font-bold text-transparent">100%</div>
                   <h3 className="mb-2 font-semibold">À la commande</h3>
                   <p className="text-sm text-muted-foreground">
-                    Paiement unique de 499 € HT pour lancer le projet. On démarre dès réception et vous livrez en 3 jours maximum.
+                    Paiement unique de <span className="whitespace-nowrap">499 € HT</span> pour lancer le projet. On démarre dès réception et vous livrez en 3 jours maximum.
                   </p>
                 </CardContent>
               </Card>
