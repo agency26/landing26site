@@ -55,22 +55,8 @@ const Blog = () => {
       <section className="bg-background py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
-            <div className="mb-12 flex items-center justify-between">
+            <div className="mb-12">
               <h2 className="text-2xl font-semibold">Derniers articles</h2>
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm">
-                  Tous
-                </Button>
-                <Button variant="ghost" size="sm">
-                  SEO
-                </Button>
-                <Button variant="ghost" size="sm">
-                  Conversion
-                </Button>
-                <Button variant="ghost" size="sm">
-                  IA
-                </Button>
-              </div>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
