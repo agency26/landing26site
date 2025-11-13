@@ -148,7 +148,7 @@ const Tarifs = () => {
 
             <div className="mt-8 text-center">
               <p className="text-sm text-muted-foreground">
-                Moyens de paiement acceptés : Virement bancaire et Lien de paiements                     
+                Moyens de paiement acceptés : Virement bancaire et Lien de paiement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
               </p>
             </div>
           </div>
