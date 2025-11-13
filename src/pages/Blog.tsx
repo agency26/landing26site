@@ -6,31 +6,31 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const Blog = () => {
-  // Placeholder articles - will be populated with CSV data
+  // Articles SEO
   const articles = [
     {
-      slug: "optimiser-landing-page-conversion",
+      slug: "optimiser-conversion-landing-page",
       title: "10 techniques pour optimiser le taux de conversion de votre landing page",
-      excerpt: "Découvrez les stratégies éprouvées pour transformer plus de visiteurs en clients sur votre landing page.",
+      excerpt: "Découvrez 10 techniques éprouvées pour améliorer significativement le taux de conversion de votre landing page.",
       category: "Conversion",
-      readTime: "8 min",
-      date: "2024-01-15",
+      readTime: "5 min",
+      date: "2024-11-13",
     },
     {
-      slug: "seo-landing-page-guide-complet",
+      slug: "seo-landing-page-guide-2024",
       title: "SEO pour landing pages : le guide complet 2024",
-      excerpt: "Tout ce que vous devez savoir pour optimiser votre landing page et ranker sur Google.",
+      excerpt: "Le guide complet pour optimiser le SEO de vos landing pages et ranker sur Google tout en maximisant vos conversions.",
       category: "SEO",
-      readTime: "12 min",
-      date: "2024-01-12",
+      readTime: "7 min",
+      date: "2024-11-13",
     },
     {
-      slug: "ia-copywriting-landing-pages",
+      slug: "ia-copywriting-landing-page",
       title: "Comment l'IA révolutionne le copywriting des landing pages",
-      excerpt: "L'intelligence artificielle transforme la création de contenu. Découvrez comment l'utiliser efficacement.",
+      excerpt: "L'intelligence artificielle transforme le copywriting : plus rapide, plus précis, mieux optimisé conversion.",
       category: "IA",
-      readTime: "10 min",
-      date: "2024-01-10",
+      readTime: "6 min",
+      date: "2024-11-13",
     },
   ];
 

@@ -9,6 +9,9 @@ import Offre from "./pages/Offre";
 import Process from "./pages/Process";
 import Tarifs from "./pages/Tarifs";
 import Blog from "./pages/Blog";
+import ConversionOptimization from "./pages/blog/ConversionOptimization";
+import SEOGuide from "./pages/blog/SEOGuide";
+import AICopywriting from "./pages/blog/AICopywriting";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Villes from "./pages/Villes";
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/process" element={<Process />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/optimiser-conversion-landing-page" element={<ConversionOptimization />} />
+          <Route path="/blog/seo-landing-page-guide-2024" element={<SEOGuide />} />
+          <Route path="/blog/ia-copywriting-landing-page" element={<AICopywriting />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/villes" element={<Villes />} />
