@@ -29,7 +29,7 @@ const FAQ = () => {
     },
     {
       question: "Puis-je modifier ma landing page après la livraison ?",
-      answer: "Absolument ! Vous recevez le code source complet et l'export statique. Vous pouvez modifier le contenu vous-même ou nous demander des modifications. Le support 7 jours post-livraison inclut les corrections de bugs. Les modifications supplémentaires peuvent être facturées selon leur ampleur, ou vous pouvez souscrire à notre maintenance mensuelle (19 € HT/mois).",
+      answer: "Absolument ! Nous effectuons toutes les modifications sur demande. Le support 7 jours post-livraison inclut les corrections de bugs. Les modifications supplémentaires peuvent être facturées selon leur ampleur, ou vous pouvez souscrire à notre maintenance mensuelle (19 € HT/mois) pour des modifications régulières.",
     },
     {
       question: "Qu'est-ce qu'une landing page et pourquoi en ai-je besoin ?",
@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "Proposez-vous un hébergement ou dois-je avoir mon propre serveur ?",
-      answer: "L'hébergement est inclus. Vous avez également la possibilité de déployer sur votre propre hébergement (Vercel, Netlify, Hostinger, etc.). Nous fournissons l'export statique complet pour un déploiement facile.",
+      answer: "L'hébergement est inclus et géré par nos soins. Votre landing page est hébergée sur une infrastructure performante et sécurisée. Vous n'avez rien à gérer techniquement.",
     },
     {
       question: "Combien de révisions sont incluses dans le prix ?",

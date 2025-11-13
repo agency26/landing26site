@@ -171,8 +171,8 @@ const Process = () => {
                 <CardContent className="pt-6">
                   <h3 className="mb-3 text-xl font-semibold">Livrables</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Code source complet</li>
-                    <li>• Export statique prêt à déployer</li>
+                    <li>• Landing page en ligne</li>
+                    <li>• Modifications sur demande</li>
                   </ul>
                 </CardContent>
               </Card>

@@ -15,7 +15,6 @@ const Offre = () => {
     "Analyse de performance intégrée",
     "2 révisions post-livraison",
     "Support 7 jours après livraison",
-    "Export statique pour déploiement",
   ];
 
   const comparison = [
