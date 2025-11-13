@@ -127,7 +127,7 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white/20 text-white hover:bg-white/10"
+                className="border-white text-white hover:bg-white hover:text-[hsl(var(--dark-bg))]"
               >
                 <a
                   href="https://wa.me/33768410643?text=Bonjour"
