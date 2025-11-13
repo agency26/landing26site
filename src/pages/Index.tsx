@@ -1,12 +1,363 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Zap,
+  Target,
+  Search,
+  Sparkles,
+  CheckCircle2,
+  ArrowRight,
+  Clock,
+  Euro,
+  MessageCircle,
+} from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const features = [
+    {
+      icon: Zap,
+      title: "Livraison en 3 jours",
+      description: "De la commande à la mise en ligne, votre site est prêt en 72h.",
+    },
+    {
+      icon: Search,
+      title: "SEO-first",
+      description: "Optimisé pour Google dès le premier jour. Structure, meta, vitesse.",
+    },
+    {
+      icon: Sparkles,
+      title: "IA intégrée",
+      description: "Copywriting, design, optimisation. L'IA accélère sans compromis.",
+    },
+    {
+      icon: Target,
+      title: "Conversion maximale",
+      description: "CTA stratégiques, parcours optimisé, design qui convertit.",
+    },
+  ];
+
+  const processSteps = [
+    {
+      day: "J0",
+      title: "Brief",
+      description: "On discute de votre projet, vos objectifs, votre cible.",
+    },
+    {
+      day: "J1",
+      title: "Design",
+      description: "Maquette premium validée. Couleurs, typo, structure.",
+    },
+    {
+      day: "J2",
+      title: "Build",
+      description: "Développement, intégration, SEO technique, contenu.",
+    },
+    {
+      day: "J3",
+      title: "Go Live",
+      description: "Tests, corrections, mise en ligne. Votre site est live.",
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: "Sophie Martin",
+      role: "CEO, TechStart",
+      content: "Site livré en 3 jours, qualité exceptionnelle. 40% de conversion en plus.",
+    },
+    {
+      name: "Thomas Dubois",
+      role: "Fondateur, GrowthLab",
+      content: "Meilleur rapport qualité/prix du marché. Design pro, SEO au top.",
+    },
+    {
+      name: "Marie Laurent",
+      role: "Marketing, InnoHub",
+      content: "Réactivité incroyable. L'équipe comprend les enjeux business.",
+    },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+
+      {/* Hero Section */}
+      <section className="relative overflow-hidden border-b border-border/50 bg-gradient-to-b from-background to-card">
+        <div className="container mx-auto px-4 py-20 md:py-32">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
+              <Sparkles className="h-4 w-4" />
+              <span>+100 landing pages livrées</span>
+            </div>
+            
+            <h1 className="mb-6 animate-fade-in-up">
+              Votre landing page pro en 3 jours — 299 € HT
+            </h1>
+            
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+              Design premium + SEO + IA. Livraison express pour entrepreneurs pressés.
+              Pas de blabla, juste des résultats.
+            </p>
+
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Button
+                size="lg"
+                asChild
+                className="bg-primary text-lg text-primary-foreground hover:bg-primary/90"
+              >
+                <a
+                  href="https://calendly.com/kabalodov/rdv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Réserver un créneau
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="border-secondary/50 text-lg hover:bg-secondary/10"
+              >
+                <a
+                  href="https://wa.me/972555002400?text=Bonjour"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  WhatsApp
+                </a>
+              </Button>
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-secondary" />
+                <span>SEO-first</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-secondary" />
+                <span>Responsive</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-secondary" />
+                <span>IA intégrée</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-b border-border/50 bg-background py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <h2 className="mb-4">Pourquoi Landing26 ?</h2>
+            <p className="text-lg text-muted-foreground">
+              Parce que votre temps est précieux et vos résultats comptent.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature, index) => (
+              <Card
+                key={index}
+                className="group border-border/50 bg-card transition-all hover:border-secondary/50 hover:bg-card/80"
+              >
+                <CardContent className="pt-6">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10">
+                    <feature.icon className="h-6 w-6 text-secondary" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Offer Section */}
+      <section className="border-b border-border/50 bg-card py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <div className="mb-12 text-center">
+              <h2 className="mb-4">L'offre Landing26</h2>
+              <p className="text-lg text-muted-foreground">
+                Tout ce dont vous avez besoin. Rien de superflu.
+              </p>
+            </div>
+
+            <Card className="border-2 border-primary/20 bg-background">
+              <CardContent className="p-8 md:p-12">
+                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-border/50 pb-8 md:flex-row">
+                  <div>
+                    <h3 className="mb-2 text-2xl font-bold">Landing Page IA</h3>
+                    <p className="text-muted-foreground">
+                      Design premium • SEO • Livraison 3 jours
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-1 text-4xl font-bold text-primary">299 €</div>
+                    <div className="text-sm text-muted-foreground">HT</div>
+                  </div>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  {[
+                    "Design sur mesure premium",
+                    "SEO technique complet",
+                    "Responsive mobile-first",
+                    "Copywriting optimisé IA",
+                    "Hébergement inclus 1 mois",
+                    "Formulaire de contact",
+                    "Analyse de performance",
+                    "Support 7j après livraison",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Button
+                    size="lg"
+                    asChild
+                    className="bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
+                    <a
+                      href="https://calendly.com/kabalodov/rdv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Commander maintenant
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="border-b border-border/50 bg-background py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <h2 className="mb-4">De zéro à live en 3 jours</h2>
+            <p className="text-lg text-muted-foreground">
+              Un process rodé, transparent, efficace.
+            </p>
+          </div>
+
+          <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-4">
+            {processSteps.map((step, index) => (
+              <div key={index} className="relative">
+                <Card className="border-border/50 bg-card transition-all hover:border-secondary/50">
+                  <CardContent className="pt-6">
+                    <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-2xl font-bold text-secondary">
+                      {step.day}
+                    </div>
+                    <h3 className="mb-2 text-xl font-semibold">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+                {index < processSteps.length - 1 && (
+                  <div className="absolute right-0 top-1/2 hidden h-0.5 w-6 -translate-y-1/2 translate-x-full bg-secondary/30 md:block" />
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button variant="outline" asChild>
+              <Link to="/process">
+                Voir le process détaillé
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="border-b border-border/50 bg-card py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <h2 className="mb-4">Ils nous font confiance</h2>
+            <p className="text-lg text-muted-foreground">
+              Résultats réels, clients satisfaits.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {testimonials.map((testimonial, index) => (
+              <Card
+                key={index}
+                className="border-border/50 bg-background transition-all hover:border-secondary/50"
+              >
+                <CardContent className="pt-6">
+                  <p className="mb-6 text-muted-foreground">"{testimonial.content}"</p>
+                  <div>
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-b from-card to-background py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-6">Prêt à lancer votre projet ?</h2>
+            <p className="mb-8 text-lg text-muted-foreground">
+              Réservez votre créneau maintenant. Places limitées chaque mois.
+            </p>
+            
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Button
+                size="lg"
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                <a
+                  href="https://calendly.com/kabalodov/rdv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Clock className="mr-2 h-5 w-5" />
+                  Réserver un créneau
+                </a>
+              </Button>
+              
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/tarifs">
+                  <Euro className="mr-2 h-5 w-5" />
+                  Voir les tarifs
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };
