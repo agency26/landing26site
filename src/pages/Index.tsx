@@ -339,7 +339,7 @@ const Index = () => {
                 <MapPin className="h-4 w-4" />
                 <span>Disponible partout en France</span>
               </div>
-              <h2 className="mb-4">Nos villes desservies en France</h2>
+              <h2 className="mb-4">Nos villes à forte demande</h2>
               <p className="text-lg text-muted-foreground">
                 Nous créons votre landing page premium en 3 jours dans toutes ces villes.
               </p>
