@@ -41,9 +41,10 @@ Votre projet est maintenant **100% prêt** pour un export statique avec toutes l
 4. Cliquez sur **Deploy**
 
 Le build générera automatiquement :
-- Toutes les pages HTML statiques
-- Le sitemap à jour
-- Tous les assets optimisés
+- **350+ pages HTML statiques** (une par route)
+- Le sitemap.xml à jour avec toutes les URLs
+- Tous les assets optimisés et minifiés
+- Structure de dossiers compatible SEO
 
 ### Méthode 3 : Upload manuel
 
