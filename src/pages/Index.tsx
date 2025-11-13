@@ -216,7 +216,7 @@ const Index = () => {
                     "SEO technique complet",
                     "Responsive mobile-first",
                     "Copywriting optimisé IA",
-                    "Hébergement inclus 1 mois",
+                    "Hébergement inclus",
                     "Formulaire de contact",
                     "Analyse de performance",
                     "Support 7j après livraison",

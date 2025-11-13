@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "Le prix de 499 € HT inclut-il vraiment tout ?",
-      answer: "Oui ! Le prix inclut : design sur mesure premium, développement responsive, SEO technique complet, copywriting optimisé IA, formulaire de contact, hébergement 1 mois, analyse de performance, 2 cycles de révision, et support 7 jours. Seules les options supplémentaires (pages additionnelles, blog, maintenance) sont en sus.",
+      answer: "Oui ! Le prix inclut : design sur mesure premium, développement responsive, SEO technique complet, copywriting optimisé IA, formulaire de contact, hébergement, analyse de performance, 2 cycles de révision, et support 7 jours. Seules les options supplémentaires (pages additionnelles, blog, maintenance) sont en sus.",
     },
     {
       question: "Comment fonctionne le SEO sur mes landing pages Landing26 ?",
@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "Proposez-vous un hébergement ou dois-je avoir mon propre serveur ?",
-      answer: "L'hébergement est inclus pendant 1 mois après la livraison. Ensuite, vous avez deux options : continuer avec notre hébergement (sur devis selon le trafic), ou déployer sur votre propre hébergement (Vercel, Netlify, Hostinger, etc.). Nous fournissons l'export statique complet pour un déploiement facile.",
+      answer: "L'hébergement est inclus. Vous avez également la possibilité de déployer sur votre propre hébergement (Vercel, Netlify, Hostinger, etc.). Nous fournissons l'export statique complet pour un déploiement facile.",
     },
     {
       question: "Combien de révisions sont incluses dans le prix ?",

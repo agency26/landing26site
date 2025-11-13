@@ -11,7 +11,7 @@ const Offre = () => {
     "Responsive mobile-first parfait",
     "Copywriting optimisé avec IA",
     "Formulaire de contact fonctionnel",
-    "Hébergement inclus 1 mois",
+    "Hébergement inclus",
     "Analyse de performance intégrée",
     "Support 7 jours après livraison",
     "Export statique pour déploiement",

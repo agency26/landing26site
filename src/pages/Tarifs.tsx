@@ -61,7 +61,7 @@ const Tarifs = () => {
                     "SEO technique complet",
                     "Responsive mobile-first",
                     "Copywriting optimisé IA",
-                    "Hébergement inclus (permanent)",
+                    "Hébergement inclus",
                     "Formulaire de contact",
                     "Analyse de performance",
                     "Support 7 jours post-livraison",
@@ -166,7 +166,7 @@ const Tarifs = () => {
               <Card className="border border-border bg-card">
                 <CardContent className="pt-6">
                   <div className="mb-3 text-4xl font-bold text-secondary">Inclus</div>
-                  <h3 className="mb-2 font-semibold">Hébergement permanent</h3>
+                  <h3 className="mb-2 font-semibold">Hébergement inclus</h3>
                   <p className="text-sm text-muted-foreground">
                     Hébergement inclus sans frais supplémentaires. Votre site reste en ligne sans coût caché.
                   </p>
