@@ -18,6 +18,9 @@ import Villes from "./pages/Villes";
 import VilleDetail from "./pages/VilleDetail";
 import Secteurs from "./pages/Secteurs";
 import SecteurDetail from "./pages/SecteurDetail";
+import MentionsLegales from "./pages/MentionsLegales";
+import Confidentialite from "./pages/Confidentialite";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +47,9 @@ const App = () => (
           <Route path="/ville/:slug" element={<VilleDetail />} />
           <Route path="/secteurs" element={<Secteurs />} />
           <Route path="/secteur/:slug" element={<SecteurDetail />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/confidentialite" element={<Confidentialite />} />
+          <Route path="/cookies" element={<Cookies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -127,14 +127,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/cgv"
-                  className="text-muted-foreground transition-colors hover:text-secondary"
-                >
-                  CGV
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/confidentialite"
                   className="text-muted-foreground transition-colors hover:text-secondary"
                 >
