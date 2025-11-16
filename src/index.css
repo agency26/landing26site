@@ -27,8 +27,8 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-gradient: linear-gradient(135deg, hsl(4 100% 61%), hsl(14 100% 57%));
     
-    /* Airwallex Blue - Subtle Accents */
-    --secondary: 215 86% 52%;     /* #1F6FEB - Airwallex Blue */
+    /* Purple Blue - Subtle Accents */
+    --secondary: 252 100% 59%;     /* #612fff - Purple Blue */
     --secondary-foreground: 0 0% 100%;
     
     /* Muted Surfaces */
@@ -46,7 +46,7 @@ All colors MUST be HSL.
     /* Borders & Inputs - Subtle Light */
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 215 86% 52%;          /* Blue ring */
+    --ring: 252 100% 59%;          /* Purple blue ring */
     
     --radius: 1rem;               /* 16px - Premium rounded */
     
@@ -58,10 +58,10 @@ All colors MUST be HSL.
     --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.08);
     --transition-smooth: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Dark sections for contrast - Airwallex style */
-    --dark-bg: 222 47% 11%;       /* #1a1f2e - Dark blue-gray */
+    /* Dark sections for contrast - Black background */
+    --dark-bg: 0 0% 0%;           /* #000000 - Pure black */
     --dark-fg: 0 0% 100%;
-    --gray-bg: 220 13% 18%;       /* #292d39 - Medium gray */
+    --gray-bg: 0 0% 10%;          /* #1A1A1A - Near black */
     --gray-fg: 0 0% 95%;
   }
 }
