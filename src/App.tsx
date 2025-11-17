@@ -12,6 +12,15 @@ import Blog from "./pages/Blog";
 import ConversionOptimization from "./pages/blog/ConversionOptimization";
 import SEOGuide from "./pages/blog/SEOGuide";
 import AICopywriting from "./pages/blog/AICopywriting";
+import ErreursDesign from "./pages/blog/ErreursDesign";
+import PsychologieConversion from "./pages/blog/PsychologieConversion";
+import PreuveSociale from "./pages/blog/PreuveSociale";
+import StructureLanding from "./pages/blog/StructureLanding";
+import CTAConversion from "./pages/blog/CTAConversion";
+import LandingVsSite from "./pages/blog/LandingVsSite";
+import SEOLanding from "./pages/blog/SEOLanding";
+import CopywritingLanding from "./pages/blog/CopywritingLanding";
+import VitesseConversion from "./pages/blog/VitesseConversion";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Villes from "./pages/Villes";
@@ -41,6 +50,15 @@ const App = () => (
           <Route path="/blog/optimiser-conversion-landing-page" element={<ConversionOptimization />} />
           <Route path="/blog/seo-landing-page-guide-2024" element={<SEOGuide />} />
           <Route path="/blog/ia-copywriting-landing-page" element={<AICopywriting />} />
+          <Route path="/articles/erreurs-design-landing" element={<ErreursDesign />} />
+          <Route path="/articles/psychologie-conversion" element={<PsychologieConversion />} />
+          <Route path="/articles/preuve-sociale" element={<PreuveSociale />} />
+          <Route path="/articles/structure-parfaite" element={<StructureLanding />} />
+          <Route path="/articles/cta-conversion" element={<CTAConversion />} />
+          <Route path="/articles/landing-vs-site" element={<LandingVsSite />} />
+          <Route path="/articles/seo-landing" element={<SEOLanding />} />
+          <Route path="/articles/copywriting-landing" element={<CopywritingLanding />} />
+          <Route path="/articles/vitesse-conversion" element={<VitesseConversion />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/villes" element={<Villes />} />
