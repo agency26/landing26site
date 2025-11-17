@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOHead from "@/components/SEOHead";
+import { SEOHead } from "@/components/SEOHead";
 
 const DesignErrors = () => {
   return (
