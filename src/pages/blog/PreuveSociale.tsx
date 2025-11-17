@@ -93,27 +93,37 @@ const PreuveSociale = () => {
               </ul>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/blog/optimiser-conversion-landing-page"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      10 techniques pour optimiser votre taux de conversion
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/blog/ia-copywriting-landing-page"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      Comment l'IA révolutionne le copywriting des landing pages
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/psychologie-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">5 techniques psychologiques</h4>
+                    <p className="text-sm text-muted-foreground">Leviers de conversion puissants</p>
+                  </Link>
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                    <p className="text-sm text-muted-foreground">Construire une landing efficace</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Guide complet d'optimisation</p>
+                  </Link>
+                  <Link
+                    to="/blog/ia-copywriting-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">IA et copywriting</h4>
+                    <p className="text-sm text-muted-foreground">La révolution du contenu</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">

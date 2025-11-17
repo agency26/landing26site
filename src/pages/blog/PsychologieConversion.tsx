@@ -109,6 +109,40 @@ const PsychologieConversion = () => {
                 </ul>
               </div>
 
+              <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/preuve-sociale"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Utiliser la preuve sociale</h4>
+                    <p className="text-sm text-muted-foreground">Boostez vos conversions</p>
+                  </Link>
+                  <Link
+                    to="/articles/copywriting-landing"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Copywriting efficace</h4>
+                    <p className="text-sm text-muted-foreground">Écrire du contenu qui convertit</p>
+                  </Link>
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                    <p className="text-sm text-muted-foreground">Architecture qui convertit</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Guide complet</p>
+                  </Link>
+                </div>
+              </div>
+
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">
                 <h3 className="mb-4 text-2xl font-bold">
                   Prêt à créer une landing page qui convertit ?
