@@ -63,27 +63,37 @@ const VitesseConversion = () => {
               <p>➡️ Une architecture moderne garantit des performances optimales.</p>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/articles/seo-landing"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      Optimiser le SEO d'une landing page
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/blog/optimiser-conversion-landing-page"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      10 techniques pour optimiser votre conversion
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/seo-landing"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">SEO landing page</h4>
+                    <p className="text-sm text-muted-foreground">Optimiser pour Google</p>
+                  </Link>
+                  <Link
+                    to="/articles/erreurs-design-landing"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Erreurs de design</h4>
+                    <p className="text-sm text-muted-foreground">Pièges à éviter</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Guide d'optimisation</p>
+                  </Link>
+                  <Link
+                    to="/articles/landing-vs-site"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Landing vs Site</h4>
+                    <p className="text-sm text-muted-foreground">Quel choix faire ?</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">

@@ -63,27 +63,37 @@ const SEOLanding = () => {
               <p>Créez des liens vers vos autres pages pertinentes pour renforcer votre autorité.</p>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/blog/seo-landing-page-guide-2024"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      SEO pour landing pages : le guide complet 2024
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/articles/vitesse-conversion"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      Impact de la vitesse sur la conversion
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/blog/seo-landing-page-guide-2024"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Guide SEO 2024</h4>
+                    <p className="text-sm text-muted-foreground">Guide complet du SEO</p>
+                  </Link>
+                  <Link
+                    to="/articles/vitesse-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Vitesse et conversion</h4>
+                    <p className="text-sm text-muted-foreground">Performance critique</p>
+                  </Link>
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                    <p className="text-sm text-muted-foreground">Construire efficacement</p>
+                  </Link>
+                  <Link
+                    to="/articles/copywriting-landing"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Copywriting efficace</h4>
+                    <p className="text-sm text-muted-foreground">Contenu optimisé</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">

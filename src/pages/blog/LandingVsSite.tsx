@@ -79,27 +79,37 @@ const LandingVsSite = () => {
               </p>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/articles/structure-parfaite"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      La structure idéale d'une landing page
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/tarifs"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      Nos tarifs
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                    <p className="text-sm text-muted-foreground">Architecture qui convertit</p>
+                  </Link>
+                  <Link
+                    to="/articles/vitesse-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Vitesse et conversion</h4>
+                    <p className="text-sm text-muted-foreground">Performance = résultats</p>
+                  </Link>
+                  <Link
+                    to="/tarifs"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Nos tarifs</h4>
+                    <p className="text-sm text-muted-foreground">Landing page à 499€</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Maximisez vos résultats</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">

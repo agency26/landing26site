@@ -68,27 +68,37 @@ const CopywritingLanding = () => {
               <p>L'IA peut vous aider à générer des variantes et à optimiser votre copywriting.</p>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/blog/ia-copywriting-landing-page"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      Comment l'IA révolutionne le copywriting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/articles/structure-parfaite"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      La structure idéale d'une landing page
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/blog/ia-copywriting-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">IA et copywriting</h4>
+                    <p className="text-sm text-muted-foreground">Révolution du contenu</p>
+                  </Link>
+                  <Link
+                    to="/articles/cta-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">CTA performant</h4>
+                    <p className="text-sm text-muted-foreground">Boutons qui convertissent</p>
+                  </Link>
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                    <p className="text-sm text-muted-foreground">Architecture efficace</p>
+                  </Link>
+                  <Link
+                    to="/articles/psychologie-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Psychologie conversion</h4>
+                    <p className="text-sm text-muted-foreground">Techniques persuasives</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">

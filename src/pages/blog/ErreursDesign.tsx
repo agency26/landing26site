@@ -125,6 +125,40 @@ const ErreursDesign = () => {
                 </ul>
               </div>
 
+              <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/structure-parfaite"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">La structure idéale d'une landing page</h4>
+                    <p className="text-sm text-muted-foreground">Découvrez l'architecture parfaite</p>
+                  </Link>
+                  <Link
+                    to="/articles/cta-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Créer un CTA qui convertit</h4>
+                    <p className="text-sm text-muted-foreground">Optimisez vos boutons d'action</p>
+                  </Link>
+                  <Link
+                    to="/articles/vitesse-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Impact de la vitesse</h4>
+                    <p className="text-sm text-muted-foreground">Pourquoi la performance compte</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Optimisez votre taux de conversion</p>
+                  </Link>
+                </div>
+              </div>
+
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">
                 <h3 className="mb-4 text-2xl font-bold">
                   Prêt à créer une landing page qui convertit ?

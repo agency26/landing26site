@@ -91,27 +91,37 @@ const StructureLanding = () => {
               <p>Toujours terminer par une invitation à agir.</p>
 
               <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
-                <h3 className="mb-4 text-xl font-semibold">Articles connexes</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/blog/optimiser-conversion-landing-page"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      10 techniques pour optimiser votre taux de conversion
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/blog/seo-landing-page-guide-2024"
-                      className="flex items-center text-secondary hover:underline"
-                    >
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      SEO pour landing pages : le guide complet 2024
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Link
+                    to="/articles/erreurs-design-landing"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Erreurs de design</h4>
+                    <p className="text-sm text-muted-foreground">Ce qui détruit la conversion</p>
+                  </Link>
+                  <Link
+                    to="/articles/cta-conversion"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">CTA performant</h4>
+                    <p className="text-sm text-muted-foreground">Créer un bouton qui convertit</p>
+                  </Link>
+                  <Link
+                    to="/blog/optimiser-conversion-landing-page"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                    <p className="text-sm text-muted-foreground">Optimisez votre page</p>
+                  </Link>
+                  <Link
+                    to="/blog/seo-landing-page-guide-2024"
+                    className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                  >
+                    <h4 className="mb-2 font-semibold text-secondary">Guide SEO 2024</h4>
+                    <p className="text-sm text-muted-foreground">Optimisation complète</p>
+                  </Link>
+                </div>
               </div>
 
               <div className="not-prose mt-12 rounded-lg bg-gradient-to-r from-primary to-secondary p-8 text-center text-white">
