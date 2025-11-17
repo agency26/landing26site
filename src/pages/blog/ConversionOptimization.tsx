@@ -133,6 +133,40 @@ const ConversionOptimization = () => {
             <p>
               Une landing page efficace repose sur le design, la clarté, la confiance et la vitesse. En appliquant ces 10 techniques, vous maximisez votre taux de conversion et augmentez la valeur de chaque visiteur.
             </p>
+
+            <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
+              <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                <Link
+                  to="/articles/erreurs-design-landing"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Erreurs de design</h4>
+                  <p className="text-sm text-muted-foreground">Ce qui détruit la conversion</p>
+                </Link>
+                <Link
+                  to="/articles/psychologie-conversion"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">5 techniques psychologiques</h4>
+                  <p className="text-sm text-muted-foreground">Booster vos conversions</p>
+                </Link>
+                <Link
+                  to="/articles/cta-conversion"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">CTA performant</h4>
+                  <p className="text-sm text-muted-foreground">Créer un bouton qui convertit</p>
+                </Link>
+                <Link
+                  to="/blog/seo-landing-page-guide-2024"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Guide SEO 2024</h4>
+                  <p className="text-sm text-muted-foreground">Optimiser pour Google</p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </article>
