@@ -9,6 +9,30 @@ const Blog = () => {
   // Articles SEO
   const articles = [
     {
+      slug: "preuve-sociale",
+      title: "Comment utiliser la preuve sociale pour booster vos conversions ?",
+      excerpt: "Découvrez comment utiliser avis, logos et crédibilité pour augmenter les conversions.",
+      category: "Social Proof",
+      readTime: "8 min",
+      date: "2024-09-30",
+    },
+    {
+      slug: "psychologie-conversion",
+      title: "5 techniques psychologiques qui boostent la conversion d'une landing page",
+      excerpt: "Découvrez les 5 leviers psychologiques les plus puissants pour augmenter le taux de conversion d'une landing page.",
+      category: "Conversion",
+      readTime: "8 min",
+      date: "2024-09-26",
+    },
+    {
+      slug: "erreurs-design-landing",
+      title: "Les erreurs de design qui détruisent le taux de conversion d'une landing page",
+      excerpt: "Découvrez les erreurs de design les plus courantes sur une landing page et comment les éviter pour augmenter vos conversions.",
+      category: "Design",
+      readTime: "7 min",
+      date: "2024-09-22",
+    },
+    {
       slug: "optimiser-conversion-landing-page",
       title: "10 techniques pour optimiser le taux de conversion de votre landing page",
       excerpt: "Découvrez 10 techniques éprouvées pour améliorer significativement le taux de conversion de votre landing page.",
