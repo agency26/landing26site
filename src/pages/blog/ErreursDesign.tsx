@@ -31,7 +31,7 @@ const ErreursDesign = () => {
               </span>
               <span>7 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-09-22">22 septembre 2024</time>
+              <time dateTime="2025-09-22">22 septembre 2025</time>
             </div>
 
             <h1 className="mb-8">Les erreurs de design qui détruisent le taux de conversion d'une landing page</h1>

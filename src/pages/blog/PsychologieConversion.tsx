@@ -31,7 +31,7 @@ const PsychologieConversion = () => {
               </span>
               <span>8 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-09-26">26 septembre 2024</time>
+              <time dateTime="2025-09-26">26 septembre 2025</time>
             </div>
 
             <h1 className="mb-8">5 techniques psychologiques qui boostent la conversion d'une landing page</h1>

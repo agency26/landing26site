@@ -31,7 +31,7 @@ const LandingVsSite = () => {
               </span>
               <span>9 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-10-12">12 octobre 2024</time>
+              <time dateTime="2025-10-12">12 octobre 2025</time>
             </div>
 
             <h1 className="mb-8">Landing page vs site classique : lequel convertit le mieux ?</h1>

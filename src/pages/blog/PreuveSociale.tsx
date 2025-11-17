@@ -31,7 +31,7 @@ const PreuveSociale = () => {
               </span>
               <span>8 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-09-30">30 septembre 2024</time>
+              <time dateTime="2025-09-30">30 septembre 2025</time>
             </div>
 
             <h1 className="mb-8">Comment utiliser la preuve sociale pour booster vos conversions ?</h1>

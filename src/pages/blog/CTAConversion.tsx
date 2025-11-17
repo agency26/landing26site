@@ -31,7 +31,7 @@ const CTAConversion = () => {
               </span>
               <span>7 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-10-08">8 octobre 2024</time>
+              <time dateTime="2025-10-08">8 octobre 2025</time>
             </div>
 
             <h1 className="mb-8">Comment créer un CTA qui convertit vraiment sur une landing page</h1>
