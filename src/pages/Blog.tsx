@@ -14,7 +14,7 @@ const Blog = () => {
       excerpt: "Découvrez les erreurs de design les plus courantes sur une landing page et comment les éviter pour augmenter vos conversions.",
       category: "Design",
       readTime: "7 min",
-      date: "2024-09-22",
+      date: "2025-09-22",
     },
     {
       slug: "articles/psychologie-conversion",
@@ -22,7 +22,7 @@ const Blog = () => {
       excerpt: "Découvrez les 5 leviers psychologiques les plus puissants pour augmenter le taux de conversion d'une landing page.",
       category: "Conversion",
       readTime: "8 min",
-      date: "2024-09-26",
+      date: "2025-09-26",
     },
     {
       slug: "articles/preuve-sociale",
@@ -30,7 +30,7 @@ const Blog = () => {
       excerpt: "Les meilleures techniques de preuve sociale pour augmenter la conversion d'une landing page.",
       category: "Social Proof",
       readTime: "8 min",
-      date: "2024-09-30",
+      date: "2025-09-30",
     },
     {
       slug: "articles/structure-parfaite",
@@ -38,7 +38,7 @@ const Blog = () => {
       excerpt: "Découvrez l'architecture parfaite d'une landing page qui convertit.",
       category: "Structure",
       readTime: "9 min",
-      date: "2024-10-04",
+      date: "2025-10-04",
     },
     {
       slug: "articles/cta-conversion",
@@ -46,7 +46,7 @@ const Blog = () => {
       excerpt: "Découvrez comment optimiser vos boutons d'appel à l'action.",
       category: "CTA",
       readTime: "7 min",
-      date: "2024-10-08",
+      date: "2025-10-08",
     },
     {
       slug: "articles/landing-vs-site",
@@ -54,7 +54,7 @@ const Blog = () => {
       excerpt: "Découvrez pourquoi une landing page convertit mieux qu'un site classique.",
       category: "Comparatif",
       readTime: "9 min",
-      date: "2024-10-12",
+      date: "2025-10-12",
     },
     {
       slug: "articles/seo-landing",
@@ -62,7 +62,7 @@ const Blog = () => {
       excerpt: "Les clés pour rendre une landing page visible sur Google.",
       category: "SEO",
       readTime: "8 min",
-      date: "2024-10-15",
+      date: "2025-10-15",
     },
     {
       slug: "articles/copywriting-landing",
@@ -70,7 +70,7 @@ const Blog = () => {
       excerpt: "Apprenez à rédiger un texte clair, persuasif et optimisé conversion.",
       category: "Contenu",
       readTime: "7 min",
-      date: "2024-10-18",
+      date: "2025-10-18",
     },
     {
       slug: "articles/vitesse-conversion",
@@ -78,7 +78,7 @@ const Blog = () => {
       excerpt: "Découvrez pourquoi une landing page rapide convertit toujours mieux.",
       category: "Performance",
       readTime: "6 min",
-      date: "2024-10-22",
+      date: "2025-10-22",
     },
     {
       slug: "blog/optimiser-conversion-landing-page",
@@ -86,7 +86,7 @@ const Blog = () => {
       excerpt: "Découvrez 10 techniques éprouvées pour améliorer significativement le taux de conversion de votre landing page.",
       category: "Conversion",
       readTime: "5 min",
-      date: "2024-11-13",
+      date: "2025-11-13",
     },
     {
       slug: "blog/seo-landing-page-guide-2024",
@@ -94,7 +94,7 @@ const Blog = () => {
       excerpt: "Le guide complet pour optimiser le SEO de vos landing pages et ranker sur Google tout en maximisant vos conversions.",
       category: "SEO",
       readTime: "7 min",
-      date: "2024-11-13",
+      date: "2025-11-13",
     },
     {
       slug: "blog/ia-copywriting-landing-page",
@@ -102,7 +102,7 @@ const Blog = () => {
       excerpt: "L'intelligence artificielle transforme le copywriting : plus rapide, plus précis, mieux optimisé conversion.",
       category: "IA",
       readTime: "6 min",
-      date: "2024-11-13",
+      date: "2025-11-13",
     },
   ];
 

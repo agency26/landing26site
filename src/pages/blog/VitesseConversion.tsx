@@ -31,7 +31,7 @@ const VitesseConversion = () => {
               </span>
               <span>6 min de lecture</span>
               <span>•</span>
-              <time dateTime="2024-10-22">22 octobre 2024</time>
+              <time dateTime="2025-10-22">22 octobre 2025</time>
             </div>
 
             <h1 className="mb-8">Pourquoi la vitesse d'une landing page influence vos conversions</h1>
