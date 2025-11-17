@@ -134,6 +134,40 @@ const AICopywriting = () => {
               L'IA ne remplace pas l'humain : elle augmente ses capacités.
               Elle permet de créer des landing pages plus efficaces, plus rapides à produire, et surtout beaucoup plus performantes.
             </p>
+
+            <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
+              <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                <Link
+                  to="/articles/copywriting-landing"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Copywriting efficace</h4>
+                  <p className="text-sm text-muted-foreground">Écrire du contenu qui convertit</p>
+                </Link>
+                <Link
+                  to="/articles/structure-parfaite"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                  <p className="text-sm text-muted-foreground">Architecture performante</p>
+                </Link>
+                <Link
+                  to="/blog/optimiser-conversion-landing-page"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                  <p className="text-sm text-muted-foreground">Optimiser votre page</p>
+                </Link>
+                <Link
+                  to="/articles/psychologie-conversion"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Psychologie conversion</h4>
+                  <p className="text-sm text-muted-foreground">Techniques persuasives</p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </article>

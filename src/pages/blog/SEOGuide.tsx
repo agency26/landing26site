@@ -120,6 +120,40 @@ const SEOGuide = () => {
               <li>Un SEO technique propre</li>
               <li>Un maillage interne intelligent</li>
             </ul>
+
+            <div className="not-prose my-12 rounded-lg border border-border/50 bg-card p-8">
+              <h3 className="mb-4 text-xl font-semibold">Lire aussi</h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                <Link
+                  to="/articles/seo-landing"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">SEO landing page moderne</h4>
+                  <p className="text-sm text-muted-foreground">Clés pour ranker sur Google</p>
+                </Link>
+                <Link
+                  to="/articles/vitesse-conversion"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Vitesse et conversion</h4>
+                  <p className="text-sm text-muted-foreground">Performance critique</p>
+                </Link>
+                <Link
+                  to="/blog/optimiser-conversion-landing-page"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">10 techniques de conversion</h4>
+                  <p className="text-sm text-muted-foreground">Maximiser vos résultats</p>
+                </Link>
+                <Link
+                  to="/articles/structure-parfaite"
+                  className="rounded-lg border border-border/50 p-4 transition-colors hover:border-secondary/50 hover:bg-muted/50"
+                >
+                  <h4 className="mb-2 font-semibold text-secondary">Structure idéale</h4>
+                  <p className="text-sm text-muted-foreground">Architecture qui convertit</p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </article>
