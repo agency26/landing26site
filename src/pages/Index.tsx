@@ -159,11 +159,11 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h2 className="mb-4">Pourquoi Landing26 ?</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-white">Pourquoi Landing26 ?</h2>
+            <p className="text-lg text-gray-300">
               Parce que votre temps est précieux et vos résultats comptent.
             </p>
           </div>
@@ -172,14 +172,14 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="group border-border bg-white transition-all hover:border-secondary/50 hover:shadow-md"
+                className="group border border-white/10 bg-[hsl(var(--dark-bg))] transition-all hover:border-secondary/30 hover:shadow-lg hover:scale-105"
               >
                 <CardContent className="pt-6">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/20">
                     <feature.icon className="h-6 w-6 text-secondary" />
                   </div>
-                  <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <h3 className="mb-2 text-xl font-semibold text-white">{feature.title}</h3>
+                  <p className="text-gray-300">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -331,7 +331,7 @@ const Index = () => {
       </section>
 
       {/* Villes desservies Section */}
-      <section className="border-b border-border bg-background py-20">
+      <section className="border-b border-border bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="mb-12 text-center">
@@ -372,16 +372,16 @@ const Index = () => {
       </section>
 
       {/* Secteurs pris en charge Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="mb-12 text-center">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/20 px-4 py-2 text-sm text-secondary">
                 <Briefcase className="h-4 w-4" />
                 <span>Tous secteurs d'activité</span>
               </div>
-              <h2 className="mb-4">Secteurs pour lesquels nous créons des landing pages</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="mb-4 text-white">Secteurs pour lesquels nous créons des landing pages</h2>
+              <p className="text-lg text-gray-300">
                 Nos designs premium s'adaptent à tous les métiers.
               </p>
             </div>
@@ -394,9 +394,9 @@ const Index = () => {
                   <Link
                     key={secteur.slug}
                     to={`/secteur/${secteur.slug}`}
-                    className={`group inline-flex items-center rounded-lg border border-border bg-card px-4 py-2 text-sm transition-all hover:border-secondary hover:bg-secondary/5 hover:shadow-sm ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
+                    className={`group inline-flex items-center rounded-lg border border-white/10 bg-[hsl(var(--dark-bg))] px-4 py-2 text-sm transition-all hover:border-secondary/30 hover:shadow-lg hover:scale-105 ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
                   >
-                    <span className="text-foreground group-hover:text-secondary">
+                    <span className="text-white group-hover:text-secondary transition-colors">
                       {secteur.secteur}
                     </span>
                   </Link>
@@ -404,7 +404,7 @@ const Index = () => {
             </div>
 
             <div className="mt-8 text-center">
-              <Button variant="outline" asChild>
+              <Button variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
                 <Link to="/secteurs">
                   Voir tous les secteurs
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -416,11 +416,11 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white py-20">
+      <section className="bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6">Prêt à lancer votre projet ?</h2>
-            <p className="mb-8 text-lg text-muted-foreground">
+            <h2 className="mb-6 text-white">Prêt à lancer votre projet ?</h2>
+            <p className="mb-8 text-lg text-gray-300">
               Réservez votre créneau maintenant. Places limitées chaque mois.
             </p>
             
@@ -428,6 +428,7 @@ const Index = () => {
               <GradientButton
                 size="lg"
                 asChild
+                className="animate-pulse hover:animate-none"
               >
                 <a
                   href="https://calendly.com/kabalodov/rdv"
@@ -439,7 +440,7 @@ const Index = () => {
                 </a>
               </GradientButton>
               
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
                 <Link to="/tarifs">
                   <Euro className="mr-2 h-5 w-5" />
                   Voir les tarifs
