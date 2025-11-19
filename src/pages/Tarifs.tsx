@@ -4,6 +4,8 @@ import { GradientButton } from "@/components/ui/gradient-button";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
+
 const Tarifs = () => {
   const addons = [{
     title: "Pages supplémentaires",
@@ -21,6 +23,11 @@ const Tarifs = () => {
     description: "Audit complet + optimisations poussées"
   }];
   return <div className="min-h-screen">
+      <SEOHead
+        title="Tarifs : 499 € HT pour une Landing Page Premium | Landing26"
+        description="Tarifs transparents : landing page premium 499 € HT en 3 jours. Pages supplémentaires 49 €, maintenance 19 €/mois, SEO avancé 99 €."
+        canonical="https://landing26.fr/tarifs"
+      />
       <Header />
 
       {/* Hero */}

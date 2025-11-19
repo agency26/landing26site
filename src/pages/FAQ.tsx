@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const FAQ = () => {
   const faqs = [
@@ -75,6 +76,11 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="FAQ : Questions Fréquentes sur nos Landing Pages | Landing26"
+        description="Toutes les réponses à vos questions : délai de 3 jours, prix 499 € HT, SEO inclus, révisions, hébergement et plus encore."
+        canonical="https://landing26.fr/faq"
+      />
       <Header />
 
       {/* Hero */}

@@ -8,6 +8,7 @@ import { Mail, MessageCircle, Linkedin, MapPin, Clock, ArrowRight } from "lucide
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
+import { SEOHead } from "@/components/SEOHead";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,6 +34,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Contactez-nous : Réponse en 2h | Landing26"
+        description="Besoin d'une landing page premium ? Contactez-nous. Réponse garantie en moins de 2h. Disponibles 7j/7 via email, WhatsApp ou LinkedIn."
+        canonical="https://landing26.fr/contact"
+      />
       <Header />
 
       {/* Hero */}

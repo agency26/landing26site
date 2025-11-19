@@ -19,6 +19,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { villes, secteurs } from "@/utils/csvParser";
+import { SEOHead } from "@/components/SEOHead";
 
 const Index = () => {
   const features = [
@@ -87,6 +88,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Landing page IA livrée en 3 jours – 499 € HT | Landing26"
+        description="Landing page premium en 3 jours pour 499 € HT. Design fintech + SEO + IA. Conversion maximale, livraison express."
+        canonical="https://landing26.fr"
+      />
       <Header />
 
       {/* Hero Section */}

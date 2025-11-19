@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const Blog = () => {
   // Articles SEO
@@ -108,6 +109,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Blog : Landing Pages, SEO et Conversion | Landing26"
+        description="Conseils d'experts sur les landing pages : design, SEO, conversion, copywriting et psychologie. Tous nos guides pour créer une landing page qui convertit."
+        canonical="https://landing26.fr/blog"
+      />
       <Header />
 
       {/* Hero */}
