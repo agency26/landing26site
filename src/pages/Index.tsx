@@ -159,7 +159,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
+      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4 text-white">Pourquoi Landing26 ?</h2>
@@ -172,7 +172,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="group border border-white/10 bg-[hsl(var(--dark-bg))] transition-all hover:border-secondary/30 hover:shadow-lg hover:scale-105"
+                className="group border border-white/10 bg-[hsl(var(--gray-bg))] transition-all hover:border-secondary/30 hover:shadow-lg"
               >
                 <CardContent className="pt-6">
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/20">
@@ -188,7 +188,7 @@ const Index = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-20">
+      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-12 text-center">
@@ -198,7 +198,7 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="border border-gray/30 bg-[hsl(var(--gray-bg))]">
+            <Card className="border border-white/10 bg-[hsl(var(--dark-bg))]">
               <CardContent className="p-8 md:p-12">
                 <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-white/10 pb-8 md:flex-row">
                   <div>
@@ -253,7 +253,7 @@ const Index = () => {
       </section>
 
       {/* Process Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-background py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4">De zéro à live en 3 jours</h2>
@@ -295,7 +295,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
+      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4 text-white">Ils nous font confiance</h2>
@@ -308,7 +308,7 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border border-white/10 bg-[hsl(var(--dark-bg))] transition-all hover:border-secondary/30 hover:shadow-md"
+                className="border border-white/10 bg-[hsl(var(--gray-bg))] transition-all hover:border-secondary/30 hover:shadow-md"
               >
                 <CardContent className="pt-6">
                   <div className="mb-4 flex gap-1">
@@ -331,7 +331,7 @@ const Index = () => {
       </section>
 
       {/* Villes desservies Section */}
-      <section className="border-b border-border bg-white py-20">
+      <section className="border-b border-border bg-background py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="mb-12 text-center">
@@ -394,7 +394,7 @@ const Index = () => {
                   <Link
                     key={secteur.slug}
                     to={`/secteur/${secteur.slug}`}
-                    className={`group inline-flex items-center rounded-lg border border-white/10 bg-[hsl(var(--dark-bg))] px-4 py-2 text-sm transition-all hover:border-secondary/30 hover:shadow-lg hover:scale-105 ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
+                    className={`group inline-flex items-center rounded-lg border border-white/10 bg-[hsl(var(--dark-bg))] px-4 py-2 text-sm transition-all hover:border-secondary/30 hover:shadow-lg ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
                   >
                     <span className="text-white group-hover:text-secondary transition-colors">
                       {secteur.secteur}
