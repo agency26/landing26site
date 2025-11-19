@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare, Palette, Code, Rocket, CheckCircle2, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const Process = () => {
   const steps = [
@@ -62,6 +63,11 @@ const Process = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Notre Process : Landing Page en 3 Jours | Landing26"
+        description="Process transparent : Brief (J0), Design (J1), Développement (J2), Livraison (J3). Découvrez notre méthode efficace pour créer votre landing page."
+        canonical="https://landing26.fr/process"
+      />
       <Header />
 
       {/* Hero */}

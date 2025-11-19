@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, X, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const Offre = () => {
   const included = [
@@ -47,6 +48,11 @@ const Offre = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Notre Offre : Landing Page Premium en 3 jours | Landing26"
+        description="Découvrez notre offre complète : landing page premium à 499 € HT, livrée en 3 jours. Design fintech, SEO inclus, hébergement offert."
+        canonical="https://landing26.fr/offre"
+      />
       <Header />
 
       {/* Hero */}
