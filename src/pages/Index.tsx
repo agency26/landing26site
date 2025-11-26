@@ -358,92 +358,104 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Villes desservies Section */}
+      {/* Villes & Secteurs Section - Unified with Tabs */}
       <section className="border-b border-border bg-background py-24">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="mb-16 text-center">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-secondary/30 bg-secondary/10 px-5 py-2.5 text-sm font-semibold text-secondary backdrop-blur-sm shadow-lg animate-fade-in">
-                <MapPin className="h-4 w-4 animate-pulse" />
-                <span>Disponible partout en France</span>
-              </div>
-              <h2 className="mb-4 font-black animate-fade-in" style={{ animationDelay: "0.1s" }}>Nos villes à forte demande</h2>
-              <p className="text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                Nous créons votre landing page premium en 3 jours dans toutes ces villes.
+              <h2 className="mb-4 font-black animate-fade-in">Partout en France, tous les secteurs</h2>
+              <p className="text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                Nos landing pages premium s'adaptent à votre localisation et votre métier.
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-4">
-              {villes.slice(0, 12).map((ville, index) => (
-                <Link
-                  key={ville.slug}
-                  to={`/ville/${ville.slug}`}
-                  className={`group inline-flex items-center rounded-xl border-2 border-border bg-card px-6 py-3 text-sm font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 animate-fade-in-up ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
-                  style={{ animationDelay: `${index * 0.05}s` }}
+            <Tabs defaultValue="villes" className="w-full">
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 h-14 bg-muted/50 p-1 rounded-2xl">
+                <TabsTrigger 
+                  value="villes" 
+                  className="rounded-xl data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:via-primary-orange data-[state=active]:to-primary-purple data-[state=active]:text-white font-bold text-base transition-all"
                 >
-                  <span className="text-foreground group-hover:text-secondary transition-colors">
-                    {ville.ville}
-                  </span>
-                </Link>
-              ))}
-            </div>
+                  <MapPin className="mr-2 h-5 w-5" />
+                  Villes
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="secteurs" 
+                  className="rounded-xl data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:via-primary-orange data-[state=active]:to-primary-purple data-[state=active]:text-white font-bold text-base transition-all"
+                >
+                  <Briefcase className="mr-2 h-5 w-5" />
+                  Secteurs
+                </TabsTrigger>
+              </TabsList>
 
-            <div className="mt-12 text-center">
-              <Button variant="outline" asChild className="border-2 hover:border-secondary hover:bg-secondary/10 hover:scale-105 transition-all font-semibold">
-                <Link to="/villes">
-                  Voir toutes les villes
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+              <TabsContent value="villes" className="mt-0">
+                <div className="mb-6 text-center">
+                  <div className="inline-flex items-center gap-2 rounded-full border-2 border-secondary/30 bg-secondary/10 px-5 py-2.5 text-sm font-semibold text-secondary backdrop-blur-sm shadow-lg">
+                    <MapPin className="h-4 w-4 animate-pulse" />
+                    <span>Disponible dans toute la France</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-wrap justify-center gap-4">
+                  {villes.slice(0, 12).map((ville, index) => (
+                    <Link
+                      key={ville.slug}
+                      to={`/ville/${ville.slug}`}
+                      className={`group inline-flex items-center rounded-xl border-2 border-border bg-card px-6 py-3 text-sm font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 animate-fade-in-up ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      <span className="text-foreground group-hover:text-secondary transition-colors">
+                        {ville.ville}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
 
-      {/* Secteurs pris en charge Section */}
-      <section className="border-b border-border bg-white py-24 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-purple/5"></div>
-        
-        <div className="container relative mx-auto px-4">
-          <div className="mx-auto max-w-6xl">
-            <div className="mb-16 text-center">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-secondary/30 bg-secondary/10 px-5 py-2.5 text-sm font-semibold text-secondary backdrop-blur-sm shadow-lg animate-fade-in">
-                <Briefcase className="h-4 w-4 animate-pulse" />
-                <span>Tous secteurs d'activité</span>
-              </div>
-              <h2 className="mb-4 font-black animate-fade-in" style={{ animationDelay: "0.1s" }}>Secteurs pour lesquels nous créons des landing pages</h2>
-              <p className="text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                Nos designs premium s'adaptent à tous les métiers.
-              </p>
-            </div>
+                <div className="mt-12 text-center">
+                  <Button variant="outline" asChild className="border-2 hover:border-secondary hover:bg-secondary/10 hover:scale-105 transition-all font-semibold">
+                    <Link to="/villes">
+                      Voir toutes les villes
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </TabsContent>
 
-            <div className="flex flex-wrap justify-center gap-4">
-              {secteurs
-                .filter((secteur) => secteur.secteur !== 'Comptable' && secteur.secteur !== 'Expert SEO')
-                .slice(0, 12)
-                .map((secteur, index) => (
-                  <Link
-                    key={secteur.slug}
-                    to={`/secteur/${secteur.slug}`}
-                    className={`group inline-flex items-center rounded-xl border-2 border-border bg-card px-6 py-3 text-sm font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 animate-fade-in-up ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
-                    style={{ animationDelay: `${index * 0.05}s` }}
-                  >
-                    <span className="text-foreground group-hover:text-secondary transition-colors">
-                      {secteur.secteur}
-                    </span>
-                  </Link>
-                ))}
-            </div>
+              <TabsContent value="secteurs" className="mt-0">
+                <div className="mb-6 text-center">
+                  <div className="inline-flex items-center gap-2 rounded-full border-2 border-secondary/30 bg-secondary/10 px-5 py-2.5 text-sm font-semibold text-secondary backdrop-blur-sm shadow-lg">
+                    <Briefcase className="h-4 w-4 animate-pulse" />
+                    <span>Tous secteurs d'activité</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-wrap justify-center gap-4">
+                  {secteurs
+                    .filter((secteur) => secteur.secteur !== 'Comptable' && secteur.secteur !== 'Expert SEO')
+                    .slice(0, 12)
+                    .map((secteur, index) => (
+                      <Link
+                        key={secteur.slug}
+                        to={`/secteur/${secteur.slug}`}
+                        className={`group inline-flex items-center rounded-xl border-2 border-border bg-card px-6 py-3 text-sm font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 animate-fade-in-up ${index >= 6 ? 'hidden md:inline-flex' : ''}`}
+                        style={{ animationDelay: `${index * 0.05}s` }}
+                      >
+                        <span className="text-foreground group-hover:text-secondary transition-colors">
+                          {secteur.secteur}
+                        </span>
+                      </Link>
+                    ))}
+                </div>
 
-            <div className="mt-12 text-center">
-              <Button variant="outline" asChild className="border-2 hover:border-secondary hover:bg-secondary/10 hover:scale-105 transition-all font-semibold">
-                <Link to="/secteurs">
-                  Voir tous les secteurs
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
+                <div className="mt-12 text-center">
+                  <Button variant="outline" asChild className="border-2 hover:border-secondary hover:bg-secondary/10 hover:scale-105 transition-all font-semibold">
+                    <Link to="/secteurs">
+                      Voir tous les secteurs
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
