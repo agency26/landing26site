@@ -116,6 +116,12 @@ const VilleDetail = () => {
                   </CardContent>
                 </Card>
               ))}
+              <Card className="border-2 border-border bg-card backdrop-blur-sm transition-all hover:border-secondary hover:shadow-xl hover:-translate-y-1 animate-fade-in-up" style={{ animationDelay: `${ville.benefices_locaux.split(',').length * 0.1}s` }}>
+                <CardContent className="flex items-start gap-3 pt-6">
+                  <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-secondary" />
+                  <span className="text-foreground font-medium">Design premium IA adapté à votre secteur</span>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
