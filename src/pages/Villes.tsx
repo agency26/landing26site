@@ -51,32 +51,34 @@ const Villes = () => {
       </section>
 
       {/* Cities Grid */}
-      <section className="bg-[hsl(var(--dark-bg))] py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-muted via-background to-secondary/5 py-20 relative overflow-hidden">
+        <div className="absolute top-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              {villes.map((ville) => (
+              {villes.map((ville, index) => (
                 <Link
                   key={ville.slug}
                   to={`/ville/${ville.slug}`}
-                  className="group"
+                  className="group animate-fade-in-up"
+                  style={{ animationDelay: `${index * 0.02}s` }}
                 >
-                  <Card className="border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-lg">
+                  <Card className="border-2 border-border bg-card backdrop-blur-sm transition-all hover:border-secondary hover:shadow-xl hover:-translate-y-1">
                     <CardContent className="flex items-center justify-between p-4">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/20">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/20 group-hover:bg-secondary/30 transition-colors">
                           <MapPin className="h-5 w-5 text-secondary" />
                         </div>
                         <div>
-                          <div className="font-semibold text-white group-hover:text-secondary">
+                          <div className="font-semibold text-foreground group-hover:text-secondary transition-colors">
                             {ville.ville}
                           </div>
-                          <div className="text-sm text-gray-300">
+                          <div className="text-sm text-muted-foreground">
                             {ville.region}
                           </div>
                         </div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-gray-400 opacity-0 transition-opacity group-hover:opacity-100" />
+                      <ArrowRight className="h-4 w-4 text-muted-foreground opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
                     </CardContent>
                   </Card>
                 </Link>

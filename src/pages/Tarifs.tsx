@@ -31,11 +31,12 @@ const Tarifs = () => {
       <Header />
 
       {/* Hero */}
-      <section className="border-b border-border bg-dark py-20">
-        <div className="container mx-auto px-4">
+      <section className="border-b border-border bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-white">Tarifs transparents</h1>
-            <p className="text-lg text-gray-300 md:text-xl">
+            <h1 className="mb-6 font-black">Tarifs transparents</h1>
+            <p className="text-lg md:text-xl font-medium text-muted-foreground">
               Un prix unique, tout inclus. Pas de surprise.
             </p>
           </div>
@@ -81,38 +82,39 @@ const Tarifs = () => {
       </section>
 
       {/* Add-ons */}
-      <section className="border-b border-border bg-gray py-20">
-        <div className="container mx-auto px-4">
+      <section className="border-b border-border bg-gradient-to-br from-muted via-background to-secondary/5 py-20 relative overflow-hidden">
+        <div className="absolute bottom-10 left-10 w-64 h-64 bg-primary-purple/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-white">Options supplémentaires</h2>
-              <p className="text-lg text-gray-300">
+              <h2 className="mb-4 font-black">Options supplémentaires</h2>
+              <p className="text-lg text-muted-foreground font-medium">
                 Besoin de plus ? Ajoutez ces options à votre commande.
               </p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
-              {addons.map((addon, index) => <Card key={index} className="border border-white/10 bg-dark">
+              {addons.map((addon, index) => <Card key={index} className="border-2 border-border bg-card hover:border-secondary/50 hover:shadow-xl transition-all">
                   <CardContent className="pt-6">
                     <div className="mb-2 flex items-baseline justify-between">
-                      <h3 className="text-xl font-semibold text-white">{addon.title}</h3>
+                      <h3 className="text-xl font-bold">{addon.title}</h3>
                     </div>
-                    <div className="mb-3 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-lg font-bold text-transparent">
+                    <div className="mb-3 bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-lg font-black text-transparent">
                       <span className="whitespace-nowrap">{addon.price}</span>
                       {addon.suffix && <span className="ml-1">{addon.suffix}</span>}
                     </div>
-                    <p className="text-gray-300">{addon.description}</p>
+                    <p className="text-muted-foreground">{addon.description}</p>
                   </CardContent>
                 </Card>)}
             </div>
 
-            <div className="mt-8 rounded-lg border border-secondary/20 bg-secondary/5 p-6">
-              <h3 className="mb-2 font-semibold text-white">Projet sur mesure ?</h3>
-              <p className="mb-4 text-sm text-gray-300">
+            <div className="mt-8 rounded-xl border-2 border-secondary/30 bg-secondary/10 p-6 backdrop-blur-sm">
+              <h3 className="mb-2 font-bold text-foreground">Projet sur mesure ?</h3>
+              <p className="mb-4 text-sm text-muted-foreground">
                 Vous avez besoin de fonctionnalités spécifiques ou d'un projet plus complexe ?
                 Contactez-nous pour un devis personnalisé.
               </p>
-              <Button variant="secondary" asChild>
+              <Button variant="secondary" asChild className="font-semibold">
                 <a href="https://wa.me/33768410643?text=Bonjour, j'ai besoin d'un devis personnalisé" target="_blank" rel="noopener noreferrer">
                   Demander un devis
                 </a>
