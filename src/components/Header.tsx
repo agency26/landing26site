@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,38 +37,6 @@ const Header = () => {
           ))}
         </div>
 
-        {/* CTA Buttons */}
-        <div className="hidden items-center gap-3 md:flex">
-          <Button
-            variant="ghost"
-            size="sm"
-            asChild
-            className="text-secondary hover:text-secondary/80"
-          >
-            <a
-              href="https://wa.me/33768410643?text=Bonjour"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MessageCircle className="mr-2 h-4 w-4" />
-              WhatsApp
-            </a>
-          </Button>
-          <Button
-            size="sm"
-            asChild
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-          >
-            <a
-              href="https://calendly.com/kabalodov/rdv"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Réserver un créneau
-            </a>
-          </Button>
-        </div>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden"
@@ -98,32 +65,6 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="flex flex-col gap-3 pt-4">
-              <Button
-                variant="outline"
-                size="sm"
-                asChild
-                className="justify-start"
-              >
-                <a
-                  href="https://wa.me/33768410643?text=Bonjour"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  WhatsApp
-                </a>
-              </Button>
-              <Button size="sm" asChild className="bg-primary">
-                <a
-                  href="https://calendly.com/kabalodov/rdv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Réserver un créneau
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
       )}
