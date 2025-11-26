@@ -205,32 +205,32 @@ const Index = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-24 relative overflow-hidden">
+      <section className="border-b border-border bg-gradient-to-br from-muted via-background to-secondary/5 py-24 relative overflow-hidden">
         {/* Animated background elements */}
-        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-64 h-64 bg-primary-purple/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-64 h-64 bg-primary-purple/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
         
         <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-16 text-center">
-              <h2 className="mb-4 text-white font-black animate-fade-in">L'offre Landing26</h2>
-              <p className="text-xl text-gray-300 font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              <h2 className="mb-4 font-black animate-fade-in">L'offre Landing26</h2>
+              <p className="text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 Tout ce dont vous avez besoin. Rien de superflu.
               </p>
             </div>
 
-            <Card className="border-2 border-primary/30 bg-gradient-to-br from-[hsl(var(--gray-bg))] to-[hsl(var(--dark-bg))] shadow-2xl shadow-primary/20 backdrop-blur-sm animate-scale-in">
-              <CardContent className="p-10 md:p-14">
-                <div className="mb-10 flex flex-col items-center justify-between gap-6 border-b-2 border-white/10 pb-10 md:flex-row">
+            <Card className="border-2 border-primary/30 bg-gradient-to-br from-card to-background shadow-2xl shadow-primary/10 backdrop-blur-sm animate-scale-in">
+              <CardContent className="p-8 md:p-14">
+                <div className="mb-10 flex flex-col items-center justify-between gap-6 border-b-2 border-border pb-10 md:flex-row">
                   <div>
-                    <h3 className="mb-3 text-3xl font-black text-white">Landing Page IA</h3>
-                    <p className="text-lg text-gray-300 font-medium">
+                    <h3 className="mb-3 text-2xl md:text-3xl font-black">Landing Page IA</h3>
+                    <p className="text-base md:text-lg text-muted-foreground font-medium">
                       Design premium • SEO • Livraison 3 jours
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="mb-2 bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-5xl font-black text-transparent animate-gradient-shift bg-200%">499 €</div>
-                    <div className="text-sm text-gray-300 font-semibold">HT</div>
+                    <div className="mb-2 bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-4xl md:text-5xl font-black text-transparent animate-gradient-shift bg-200%">499 €</div>
+                    <div className="text-sm text-muted-foreground font-semibold">HT</div>
                   </div>
                 </div>
 
@@ -247,7 +247,7 @@ const Index = () => {
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3 group animate-fade-in-up" style={{ animationDelay: `${index * 0.05}s` }}>
                       <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary-orange transition-colors" />
-                      <span className="text-gray-100 font-medium">{item}</span>
+                      <span className="text-foreground font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -256,15 +256,16 @@ const Index = () => {
                   <GradientButton
                     size="lg"
                     asChild
-                    className="shadow-2xl"
+                    className="shadow-2xl w-full sm:w-auto"
                   >
                     <a
                       href="https://calendly.com/kabalodov/rdv"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="whitespace-normal sm:whitespace-nowrap"
                     >
                       Commander maintenant
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                     </a>
                   </GradientButton>
                 </div>
@@ -317,14 +318,14 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-24 relative overflow-hidden">
+      <section className="border-b border-border bg-gradient-to-br from-background via-secondary/5 to-background py-24 relative overflow-hidden">
         {/* Background decoration */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         
         <div className="container relative mx-auto px-4">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <h2 className="mb-4 text-white font-black animate-fade-in">Ils nous font confiance</h2>
-            <p className="text-xl text-gray-300 font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <h2 className="mb-4 font-black animate-fade-in">Ils nous font confiance</h2>
+            <p className="text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
               Résultats réels, clients satisfaits.
             </p>
           </div>
@@ -333,19 +334,19 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border-2 border-white/10 bg-[hsl(var(--dark-bg))] transition-all duration-300 hover:border-secondary/50 hover:shadow-2xl hover:-translate-y-2 hover:shadow-secondary/20 animate-fade-in-up group"
+                className="border-2 border-border bg-card transition-all duration-300 hover:border-secondary/50 hover:shadow-2xl hover:-translate-y-2 hover:shadow-secondary/20 animate-fade-in-up group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-8">
                   <div className="mb-6 flex gap-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-6 w-6 fill-primary-orange text-primary-orange group-hover:scale-110 transition-transform" style={{ transitionDelay: `${i * 50}ms` }} />
+                      <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400 group-hover:scale-110 transition-transform" style={{ transitionDelay: `${i * 50}ms` }} />
                     ))}
                   </div>
-                  <p className="mb-8 text-lg text-gray-200 font-medium leading-relaxed">"{testimonial.content}"</p>
+                  <p className="mb-8 text-lg text-foreground font-medium leading-relaxed">"{testimonial.content}"</p>
                   <div>
-                    <div className="font-bold text-white text-lg">{testimonial.name}</div>
-                    <div className="text-sm text-gray-400">
+                    <div className="font-bold text-foreground text-lg">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground">
                       {testimonial.role}
                     </div>
                   </div>
