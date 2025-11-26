@@ -46,39 +46,46 @@ const SecteurDetail = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-border bg-white">
-        <div className="container mx-auto px-4 py-20 md:py-32">
+      <section className="relative overflow-hidden border-b border-border">
+        {/* Mesh gradient background */}
+        <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-60"></div>
+        
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 -right-40 w-96 h-96 bg-primary-purple/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+        
+        <div className="container relative mx-auto px-4 py-20 md:py-32">
           <div className="mx-auto max-w-4xl">
-            <div className="mb-6 flex items-center gap-2 text-muted-foreground">
-              <Link to="/" className="hover:text-foreground">Accueil</Link>
+            <div className="mb-6 flex items-center gap-2 text-muted-foreground font-medium animate-fade-in">
+              <Link to="/" className="hover:text-secondary transition-colors">Accueil</Link>
               <span>/</span>
-              <Link to="/secteurs" className="hover:text-foreground">Secteurs</Link>
+              <Link to="/secteurs" className="hover:text-secondary transition-colors">Secteurs</Link>
               <span>/</span>
               <span className="text-foreground">{secteur.secteur}</span>
             </div>
             
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-4 py-2 text-sm text-secondary">
-              <Briefcase className="h-4 w-4" />
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-secondary/30 bg-secondary/10 px-5 py-2.5 text-sm font-semibold text-secondary backdrop-blur-sm shadow-lg animate-fade-in-down">
+              <Briefcase className="h-4 w-4 animate-pulse" />
               <span>Secteur d'activité</span>
             </div>
             
-            <h1 className="mb-6">
+            <h1 className="mb-6 font-black tracking-tight animate-fade-in-up">
               Landing page pour {secteur.secteur}
             </h1>
             
-            <p className="mb-8 text-lg text-muted-foreground md:text-xl">
+            <p className="mb-8 text-lg md:text-xl font-medium text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               {secteur.intro}
             </p>
 
-            <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
-              <GradientButton size="lg" asChild>
+            <div className="flex flex-col items-start justify-start gap-4 sm:flex-row animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+              <GradientButton size="lg" asChild className="shadow-2xl">
                 <a
                   href="https://calendly.com/kabalodov/rdv"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Réserver un créneau
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </GradientButton>
             </div>
@@ -87,14 +94,15 @@ const SecteurDetail = () => {
       </section>
 
       {/* Business Needs Section */}
-      <section className="border-b border-border bg-[hsl(var(--dark-bg))] py-20">
-        <div className="container mx-auto px-4">
+      <section className="border-b border-border bg-gradient-to-br from-muted via-background to-secondary/5 py-20 relative overflow-hidden">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-white">Besoins spécifiques du secteur {secteur.secteur}</h2>
+            <h2 className="mb-8 font-black">Besoins spécifiques du secteur {secteur.secteur}</h2>
             
-            <Card className="border-white/10 bg-white/5 backdrop-blur-sm">
+            <Card className="border-2 border-border bg-card backdrop-blur-sm transition-all hover:border-secondary hover:shadow-xl animate-scale-in">
               <CardContent className="pt-6">
-                <p className="text-lg text-white">{secteur.besoins_metier}</p>
+                <p className="text-lg text-foreground font-medium leading-relaxed">{secteur.besoins_metier}</p>
               </CardContent>
             </Card>
           </div>
@@ -102,17 +110,18 @@ const SecteurDetail = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="border-b border-border bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="border-b border-border bg-white py-20 relative overflow-hidden">
+        <div className="absolute bottom-10 left-10 w-64 h-64 bg-primary-purple/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8">Avantages d'un site Landing26</h2>
+            <h2 className="mb-8 font-black">Avantages d'un site Landing26</h2>
             
             <div className="grid gap-6 md:grid-cols-2">
               {secteur.avantages_site.split(',').map((avantage, index) => (
-                <Card key={index} className="border-border bg-card">
+                <Card key={index} className="border-2 border-border bg-card transition-all hover:border-secondary hover:shadow-xl hover:-translate-y-1 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="flex items-start gap-3 pt-6">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                    <span className="text-foreground">{avantage.trim()}</span>
+                    <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-secondary" />
+                    <span className="text-foreground font-medium">{avantage.trim()}</span>
                   </CardContent>
                 </Card>
               ))}
@@ -122,23 +131,24 @@ const SecteurDetail = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="border-b border-border bg-[hsl(var(--gray-bg))] py-20">
-        <div className="container mx-auto px-4">
+      <section className="border-b border-border bg-gradient-to-br from-muted via-background to-secondary/5 py-20 relative overflow-hidden">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-center text-white">Notre offre pour {secteur.secteur}</h2>
+            <h2 className="mb-8 text-center font-black">Notre offre pour {secteur.secteur}</h2>
             
-            <Card className="border-white/10 bg-white/5 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b border-white/20 pb-8 md:flex-row">
+            <Card className="border-2 border-primary/30 bg-gradient-to-br from-card to-background shadow-2xl shadow-primary/10 backdrop-blur-sm animate-scale-in">
+              <CardContent className="p-8 md:p-10">
+                <div className="mb-8 flex flex-col items-center justify-between gap-4 border-b-2 border-border pb-8 md:flex-row">
                   <div>
-                    <h3 className="mb-2 text-2xl font-bold text-white">Landing Page IA</h3>
-                    <p className="text-gray-300">Livraison en 3 jours</p>
+                    <h3 className="mb-2 text-2xl font-black">Landing Page IA</h3>
+                    <p className="text-muted-foreground font-medium">Livraison en 3 jours</p>
                   </div>
                   <div className="text-center">
-                    <div className="mb-1 bg-gradient-to-r from-primary to-primary-orange bg-clip-text text-4xl font-bold text-transparent">
+                    <div className="mb-1 bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-4xl md:text-5xl font-black text-transparent animate-gradient-shift bg-200%">
                       499 €
                     </div>
-                    <div className="text-sm text-gray-300">HT</div>
+                    <div className="text-sm text-muted-foreground font-semibold">HT</div>
                   </div>
                 </div>
 
@@ -153,22 +163,22 @@ const SecteurDetail = () => {
                     "Vitesse maximale",
                     "Support 7j après livraison",
                   ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                      <span className="text-white">{item}</span>
+                    <div key={index} className="flex items-start gap-3 group">
+                      <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary-orange transition-colors" />
+                      <span className="text-foreground font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-8 text-center">
-                  <GradientButton size="lg" asChild>
+                  <GradientButton size="lg" asChild className="shadow-2xl">
                     <a
                       href="https://calendly.com/kabalodov/rdv"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Démarrer mon projet
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </GradientButton>
                 </div>
@@ -179,16 +189,17 @@ const SecteurDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40"></div>
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6">Prêt à lancer votre projet ?</h2>
-            <p className="mb-8 text-lg text-muted-foreground">
+            <h2 className="mb-6 font-black">Prêt à lancer votre projet ?</h2>
+            <p className="mb-8 text-lg md:text-xl font-medium text-muted-foreground">
               Réservez votre créneau maintenant. Livraison garantie en 3 jours.
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <GradientButton size="lg" asChild>
+              <GradientButton size="lg" asChild className="shadow-2xl">
                 <a
                   href="https://calendly.com/kabalodov/rdv"
                   target="_blank"
