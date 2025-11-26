@@ -113,9 +113,7 @@ const Index = () => {
             </div>
             
             <h1 className="mb-6 animate-fade-in-up font-black tracking-tight leading-tight md:leading-relaxed">
-              <span className="block md:inline">Votre landing page pro</span>{" "}
-              <span className="block md:inline">en 3 jours —</span>{" "}
-              <span className="block md:inline bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-transparent animate-gradient-shift bg-200%">499 € HT</span>
+              Votre landing page pro <span className="whitespace-nowrap">en 3 jours</span> — <span className="bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-transparent whitespace-nowrap animate-gradient-shift bg-200%">499 € HT</span>
             </h1>
             
             <p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl font-medium animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
