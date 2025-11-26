@@ -218,6 +218,80 @@ const VilleDetail = () => {
         </div>
       </section>
 
+      {/* Internal Linking Section */}
+      <section className="border-t border-border bg-muted/30 py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid gap-12 md:grid-cols-3">
+              {/* Villes populaires */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Villes populaires</h3>
+                <ul className="space-y-2">
+                  {['paris', 'lyon', 'marseille', 'bordeaux', 'lille'].map((city) => (
+                    <li key={city}>
+                      <Link 
+                        to={`/ville/${city}`}
+                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        {city.charAt(0).toUpperCase() + city.slice(1)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Secteurs populaires */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Secteurs populaires</h3>
+                <ul className="space-y-2">
+                  {['coach', 'consultant', 'immobilier', 'avocat', 'marketing'].map((sector) => (
+                    <li key={sector}>
+                      <Link 
+                        to={`/secteur/${sector}`}
+                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        {sector.charAt(0).toUpperCase() + sector.slice(1)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Articles utiles */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Articles utiles</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link 
+                      to="/blog/conversion-optimization"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      10 techniques pour optimiser le taux de conversion
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/blog/seo-guide"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      SEO pour landing pages : le guide complet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/blog/ai-copywriting"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      Comment l'IA révolutionne le copywriting
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

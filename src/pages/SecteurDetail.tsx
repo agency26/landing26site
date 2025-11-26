@@ -221,6 +221,80 @@ const SecteurDetail = () => {
         </div>
       </section>
 
+      {/* Internal Linking Section */}
+      <section className="border-t border-border bg-muted/30 py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid gap-12 md:grid-cols-3">
+              {/* Villes principales */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Villes principales</h3>
+                <ul className="space-y-2">
+                  {['paris', 'lyon', 'marseille'].map((city) => (
+                    <li key={city}>
+                      <Link 
+                        to={`/ville/${city}`}
+                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        {city.charAt(0).toUpperCase() + city.slice(1)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Autres secteurs */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Autres secteurs</h3>
+                <ul className="space-y-2">
+                  {['consultant', 'avocat', 'immobilier'].map((sector) => (
+                    <li key={sector}>
+                      <Link 
+                        to={`/secteur/${sector}`}
+                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        {sector.charAt(0).toUpperCase() + sector.slice(1)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Articles utiles */}
+              <div>
+                <h3 className="mb-4 text-lg font-bold text-foreground">Articles utiles</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link 
+                      to="/blog/conversion-optimization"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      Conversion
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/blog/seo-guide"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      SEO
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/blog/ai-copywriting"
+                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      IA
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
