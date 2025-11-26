@@ -262,17 +262,26 @@ const VilleDetail = () => {
                     Secteurs populaires
                   </h4>
                   <ul className="space-y-3">
-                    {['coach', 'consultant', 'immobilier', 'avocat', 'marketing'].map((sector) => (
-                      <li key={sector}>
-                        <Link 
-                          to={`/secteur/${sector}`}
-                          className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
-                        >
-                          <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          {sector.charAt(0).toUpperCase() + sector.slice(1)}
-                        </Link>
-                      </li>
-                    ))}
+                    {['coach', 'consultant', 'agent-immobilier', 'avocat', 'agence-marketing'].map((sector) => {
+                      const displayNames: Record<string, string> = {
+                        'coach': 'Coach',
+                        'consultant': 'Consultant',
+                        'agent-immobilier': 'Agent immobilier',
+                        'avocat': 'Avocat',
+                        'agence-marketing': 'Agence marketing'
+                      };
+                      return (
+                        <li key={sector}>
+                          <Link 
+                            to={`/secteur/${sector}`}
+                            className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                          >
+                            <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            {displayNames[sector]}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </CardContent>
               </Card>
