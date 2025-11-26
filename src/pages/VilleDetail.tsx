@@ -287,7 +287,7 @@ const VilleDetail = () => {
                   <ul className="space-y-3">
                     <li>
                       <Link 
-                        to="/blog/conversion-optimization"
+                        to="/blog/optimiser-conversion-landing-page"
                         className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-start gap-2 group"
                       >
                         <ArrowRight className="h-4 w-4 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
@@ -296,7 +296,7 @@ const VilleDetail = () => {
                     </li>
                     <li>
                       <Link 
-                        to="/blog/seo-guide"
+                        to="/blog/seo-landing-page-guide-2024"
                         className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-start gap-2 group"
                       >
                         <ArrowRight className="h-4 w-4 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
@@ -305,7 +305,7 @@ const VilleDetail = () => {
                     </li>
                     <li>
                       <Link 
-                        to="/blog/ai-copywriting"
+                        to="/blog/ia-copywriting-landing-page"
                         className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-start gap-2 group"
                       >
                         <ArrowRight className="h-4 w-4 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
