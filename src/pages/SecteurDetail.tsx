@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight, Briefcase, Clock, Euro } from "lucide-react";
+import { CheckCircle2, ArrowRight, Briefcase, Clock, Euro, MapPin, Sparkles } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getSecteurBySlug } from "@/utils/csvParser";
@@ -222,74 +222,102 @@ const SecteurDetail = () => {
       </section>
 
       {/* Internal Linking Section */}
-      <section className="border-t border-border bg-muted/30 py-16">
-        <div className="container mx-auto px-4">
+      <section className="border-t border-border bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-64 h-64 bg-primary-purple/5 rounded-full blur-3xl"></div>
+        
+        <div className="container relative mx-auto px-4">
           <div className="mx-auto max-w-6xl">
-            <div className="grid gap-12 md:grid-cols-3">
+            <div className="mb-12 text-center">
+              <h3 className="text-2xl font-black mb-2">Explorez nos services</h3>
+              <p className="text-muted-foreground font-medium">Landing pages partout en France, tous secteurs</p>
+            </div>
+            
+            <div className="grid gap-8 md:grid-cols-3">
               {/* Villes principales */}
-              <div>
-                <h3 className="mb-4 text-lg font-bold text-foreground">Villes principales</h3>
-                <ul className="space-y-2">
-                  {['paris', 'lyon', 'marseille'].map((city) => (
-                    <li key={city}>
-                      <Link 
-                        to={`/ville/${city}`}
-                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
-                      >
-                        {city.charAt(0).toUpperCase() + city.slice(1)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <Card className="border-2 border-border bg-card/50 backdrop-blur-sm transition-all hover:border-secondary/50 hover:shadow-xl hover:-translate-y-1">
+                <CardContent className="pt-6">
+                  <h4 className="mb-6 text-lg font-bold text-foreground flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-secondary" />
+                    Villes principales
+                  </h4>
+                  <ul className="space-y-3">
+                    {['paris', 'lyon', 'marseille'].map((city) => (
+                      <li key={city}>
+                        <Link 
+                          to={`/ville/${city}`}
+                          className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                        >
+                          <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          {city.charAt(0).toUpperCase() + city.slice(1)}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
 
               {/* Autres secteurs */}
-              <div>
-                <h3 className="mb-4 text-lg font-bold text-foreground">Autres secteurs</h3>
-                <ul className="space-y-2">
-                  {['consultant', 'avocat', 'immobilier'].map((sector) => (
-                    <li key={sector}>
-                      <Link 
-                        to={`/secteur/${sector}`}
-                        className="text-sm text-muted-foreground hover:text-secondary transition-colors"
-                      >
-                        {sector.charAt(0).toUpperCase() + sector.slice(1)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <Card className="border-2 border-border bg-card/50 backdrop-blur-sm transition-all hover:border-secondary/50 hover:shadow-xl hover:-translate-y-1">
+                <CardContent className="pt-6">
+                  <h4 className="mb-6 text-lg font-bold text-foreground flex items-center gap-2">
+                    <Briefcase className="h-5 w-5 text-secondary" />
+                    Autres secteurs
+                  </h4>
+                  <ul className="space-y-3">
+                    {['consultant', 'avocat', 'immobilier'].map((sector) => (
+                      <li key={sector}>
+                        <Link 
+                          to={`/secteur/${sector}`}
+                          className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                        >
+                          <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          {sector.charAt(0).toUpperCase() + sector.slice(1)}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
 
               {/* Articles utiles */}
-              <div>
-                <h3 className="mb-4 text-lg font-bold text-foreground">Articles utiles</h3>
-                <ul className="space-y-2">
-                  <li>
-                    <Link 
-                      to="/blog/conversion-optimization"
-                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
-                    >
-                      Conversion
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to="/blog/seo-guide"
-                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
-                    >
-                      SEO
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to="/blog/ai-copywriting"
-                      className="text-sm text-muted-foreground hover:text-secondary transition-colors"
-                    >
-                      IA
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <Card className="border-2 border-border bg-card/50 backdrop-blur-sm transition-all hover:border-secondary/50 hover:shadow-xl hover:-translate-y-1">
+                <CardContent className="pt-6">
+                  <h4 className="mb-6 text-lg font-bold text-foreground flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-secondary" />
+                    Articles utiles
+                  </h4>
+                  <ul className="space-y-3">
+                    <li>
+                      <Link 
+                        to="/blog/conversion-optimization"
+                        className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                      >
+                        <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span>Conversion</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link 
+                        to="/blog/seo-guide"
+                        className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                      >
+                        <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span>SEO</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link 
+                        to="/blog/ai-copywriting"
+                        className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                      >
+                        <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span>IA</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
