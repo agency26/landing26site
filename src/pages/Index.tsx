@@ -112,7 +112,7 @@ const Index = () => {
               <span>+100 landing pages livrées</span>
             </div>
             
-            <h1 className="mb-6 animate-fade-in-up font-black tracking-tight">
+            <h1 className="mb-6 animate-fade-in-up font-black tracking-tight leading-relaxed">
               Votre landing page pro en 3 jours — <span className="bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-transparent whitespace-nowrap animate-gradient-shift bg-200%">499 € HT</span>
             </h1>
             
