@@ -265,17 +265,24 @@ const SecteurDetail = () => {
                     Autres secteurs
                   </h4>
                   <ul className="space-y-3">
-                    {['consultant', 'avocat', 'immobilier'].map((sector) => (
-                      <li key={sector}>
-                        <Link 
-                          to={`/secteur/${sector}`}
-                          className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
-                        >
-                          <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          {sector.charAt(0).toUpperCase() + sector.slice(1)}
-                        </Link>
-                      </li>
-                    ))}
+                    {['consultant', 'avocat', 'agent-immobilier'].map((sector) => {
+                      const displayNames: Record<string, string> = {
+                        'consultant': 'Consultant',
+                        'avocat': 'Avocat',
+                        'agent-immobilier': 'Agent immobilier'
+                      };
+                      return (
+                        <li key={sector}>
+                          <Link 
+                            to={`/secteur/${sector}`}
+                            className="text-sm font-medium text-foreground hover:text-secondary transition-colors flex items-center gap-2 group"
+                          >
+                            <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            {displayNames[sector]}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </CardContent>
               </Card>
