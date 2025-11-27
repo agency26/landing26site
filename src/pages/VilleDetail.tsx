@@ -127,6 +127,86 @@ const VilleDetail = () => {
         </div>
       </section>
 
+      {/* SEO Text Section */}
+      <section className="border-b border-border bg-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-6 text-2xl md:text-3xl font-black">
+              Pourquoi choisir une landing page à {ville.ville} ?
+            </h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
+              <p>
+                À {ville.ville}, la concurrence digitale est intense. Pour capter l'attention de vos prospects locaux, 
+                une <strong className="text-foreground">landing page professionnelle</strong> est devenue indispensable. 
+                Contrairement à un site classique, une landing page à {ville.ville} est conçue pour un seul objectif : convertir.
+              </p>
+              <p>
+                La <strong className="text-foreground">création de landing page à {ville.ville}</strong> avec Landing26 
+                vous garantit un design premium adapté à votre marché local. Chaque page est optimisée pour vos campagnes 
+                Meta Ads et Google Ads, avec un taux de conversion maximisé grâce à notre approche mobile-first.
+              </p>
+              <p>
+                Nos <strong className="text-foreground">landing pages pour {ville.ville}</strong> sont livrées en 48h, 
+                prêtes à générer des leads qualifiés dès le premier jour. Design sur mesure, SEO local intégré, 
+                copywriting persuasif — tout est pensé pour votre réussite à {ville.ville}.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="border-b border-border bg-gradient-to-br from-muted/50 via-background to-secondary/5 py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-8 text-2xl md:text-3xl font-black">
+              Questions fréquentes — {ville.ville}
+            </h2>
+            
+            <div className="space-y-6">
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    Combien coûte une landing page pour une entreprise à {ville.ville} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Notre offre est à prix fixe : <strong className="text-foreground">499 € HT</strong> pour une landing page 
+                    complète, quel que soit votre secteur d'activité à {ville.ville}. Ce tarif inclut le design sur mesure, 
+                    le copywriting, l'hébergement et le SEO local. Pas de frais cachés.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    En combien de temps livrez-vous une landing page à {ville.ville} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Votre landing page est livrée en <strong className="text-foreground">48 à 72 heures</strong>. 
+                    Notre process rodé nous permet de garantir une livraison express sans compromis sur la qualité. 
+                    Idéal si vous lancez une campagne publicitaire à {ville.ville} dans les prochains jours.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    Est-ce adapté à la publicité Meta Ads et Google Ads à {ville.ville} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Absolument. Chaque landing page est <strong className="text-foreground">optimisée pour la conversion</strong> 
+                    et conçue mobile-first. Que vous cibliez {ville.ville} ou sa région, votre page sera parfaitement 
+                    adaptée à vos campagnes publicitaires avec un temps de chargement optimisé et des CTA stratégiques.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Offer Section */}
       <section className="border-b border-border bg-white py-20 relative overflow-hidden">
         <div className="absolute bottom-10 left-10 w-64 h-64 bg-primary-purple/5 rounded-full blur-3xl"></div>

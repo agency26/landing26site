@@ -130,6 +130,86 @@ const SecteurDetail = () => {
         </div>
       </section>
 
+      {/* SEO Text Section */}
+      <section className="border-b border-border bg-gradient-to-br from-muted/30 via-background to-background py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-6 text-2xl md:text-3xl font-black">
+              Pourquoi choisir une landing page pour {secteur.secteur} ?
+            </h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
+              <p>
+                En tant que {secteur.secteur.toLowerCase()}, votre présence digitale doit refléter votre expertise. 
+                Une <strong className="text-foreground">landing page professionnelle pour {secteur.secteur.toLowerCase()}</strong> 
+                vous permet de convertir vos visiteurs en clients qualifiés, sans les distraire avec des pages inutiles.
+              </p>
+              <p>
+                La <strong className="text-foreground">création de landing page {secteur.secteur.toLowerCase()}</strong> 
+                avec Landing26 est pensée pour votre métier. Nous comprenons les enjeux spécifiques de votre secteur 
+                et créons des pages qui parlent directement à vos prospects, avec un design premium qui inspire confiance.
+              </p>
+              <p>
+                Nos <strong className="text-foreground">landing pages pour {secteur.secteur.toLowerCase()}</strong> sont 
+                livrées en 48h, optimisées pour Meta Ads et Google Ads. Design mobile-first, copywriting persuasif, 
+                CTA stratégiques — chaque élément est conçu pour maximiser votre taux de conversion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="border-b border-border bg-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-8 text-2xl md:text-3xl font-black">
+              Questions fréquentes — {secteur.secteur}
+            </h2>
+            
+            <div className="space-y-6">
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    Combien coûte une landing page pour un {secteur.secteur.toLowerCase()} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Notre offre est à prix fixe : <strong className="text-foreground">499 € HT</strong> pour une landing page 
+                    complète adaptée au secteur {secteur.secteur.toLowerCase()}. Ce tarif inclut le design sur mesure, 
+                    le copywriting métier, l'hébergement et l'optimisation SEO. Aucun supplément.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    En combien de temps livrez-vous une landing page pour {secteur.secteur.toLowerCase()} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Votre landing page est livrée en <strong className="text-foreground">48 à 72 heures</strong>. 
+                    Notre expertise dans le secteur {secteur.secteur.toLowerCase()} nous permet d'être rapides 
+                    sans sacrifier la qualité. Parfait pour lancer votre prochaine campagne d'acquisition.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-border bg-card transition-all hover:border-secondary/50">
+                <CardContent className="pt-6">
+                  <h3 className="mb-3 text-lg font-bold text-foreground">
+                    Est-ce adapté à la publicité Meta Ads et Google Ads pour {secteur.secteur.toLowerCase()} ?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Oui, chaque landing page est <strong className="text-foreground">optimisée pour la conversion</strong> 
+                    et conçue mobile-first. Les pages pour {secteur.secteur.toLowerCase()} sont particulièrement 
+                    efficaces en publicité payante grâce à un temps de chargement rapide et des CTA percutants.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Offer Section */}
       <section className="border-b border-border bg-gradient-to-br from-muted via-background to-secondary/5 py-20 relative overflow-hidden">
         <div className="absolute top-10 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
