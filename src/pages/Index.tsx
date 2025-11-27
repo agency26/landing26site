@@ -123,17 +123,11 @@ const Index = () => {
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
               <GradientButton
                 size="lg"
-                asChild
                 className="text-lg shadow-2xl"
+                onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
               >
-                <a
-                  href="https://calendly.com/kabalodov/rdv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Réserver un créneau
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                Réserver un créneau
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </GradientButton>
               
               <Button
