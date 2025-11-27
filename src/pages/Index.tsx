@@ -10,8 +10,6 @@ import {
   Sparkles,
   CheckCircle2,
   ArrowRight,
-  Clock,
-  Euro,
   MessageCircle,
   Star,
   MapPin,
@@ -463,45 +461,6 @@ const Index = () => {
 
       {/* Quick Contact Form */}
       <QuickContactForm />
-
-      {/* CTA Section */}
-      <section className="bg-white py-24 relative overflow-hidden">
-        {/* Mesh gradient background */}
-        <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40"></div>
-        
-        <div className="container relative mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-8 font-black animate-fade-in">Prêt à lancer votre projet ?</h2>
-            <p className="mb-10 text-xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Réservez votre créneau maintenant. Places limitées chaque mois.
-            </p>
-            
-            <div className="flex flex-col items-center justify-center gap-6 sm:flex-row animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <GradientButton
-                size="lg"
-                asChild
-                className="shadow-2xl"
-              >
-                <a
-                  href="https://calendly.com/kabalodov/rdv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Clock className="mr-2 h-5 w-5" />
-                  Réserver un créneau
-                </a>
-              </GradientButton>
-              
-              <Button size="lg" variant="outline" asChild className="border-2 hover:border-secondary hover:bg-secondary/10 hover:scale-105 transition-all font-semibold">
-                <Link to="/tarifs">
-                  <Euro className="mr-2 h-5 w-5" />
-                  Voir les tarifs
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
