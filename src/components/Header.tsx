@@ -1,9 +1,21 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToForm = () => {
+    if (location.pathname === "/") {
+      document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/#contact-form");
+    }
+    setIsMenuOpen(false);
+  };
 
   const navLinks = [
     { name: "Accueil", href: "/" },
@@ -35,6 +47,9 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
+          <Button size="sm" onClick={scrollToForm}>
+            Réserver un créneau
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -65,6 +80,9 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
+            <Button size="sm" onClick={scrollToForm} className="w-full">
+              Réserver un créneau
+            </Button>
           </div>
         </div>
       )}
