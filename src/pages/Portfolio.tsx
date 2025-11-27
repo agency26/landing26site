@@ -13,6 +13,13 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
+import landingSaas from "@/assets/portfolio/landing-saas.jpg";
+import landingEcommerce from "@/assets/portfolio/landing-ecommerce.jpg";
+import landingFintech from "@/assets/portfolio/landing-fintech.jpg";
+import landingCoaching from "@/assets/portfolio/landing-coaching.jpg";
+import landingAgency from "@/assets/portfolio/landing-agency.jpg";
+import landingApp from "@/assets/portfolio/landing-app.jpg";
+
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
@@ -21,42 +28,42 @@ const Portfolio = () => {
       id: 1,
       title: "Landing Page — SaaS B2B",
       description: "Design premium optimisé pour la conversion. Interface moderne avec animations fluides.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      image: landingSaas,
       tags: ["SaaS", "B2B", "Tech"],
     },
     {
       id: 2,
       title: "Landing Page — E-commerce",
       description: "Page de vente haute conversion. Design épuré et CTA stratégiques.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      image: landingEcommerce,
       tags: ["E-commerce", "Retail", "Mode"],
     },
     {
       id: 3,
-      title: "Landing Page — Startup",
+      title: "Landing Page — Fintech",
       description: "Design fintech moderne. Typographie bold et gradients premium.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      image: landingFintech,
       tags: ["Startup", "Fintech", "Innovation"],
     },
     {
       id: 4,
       title: "Landing Page — Coaching",
       description: "Page de capture optimisée. Design humain et authentique.",
-      image: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=800&h=600&fit=crop",
+      image: landingCoaching,
       tags: ["Coaching", "Formation", "Personnel"],
     },
     {
       id: 5,
       title: "Landing Page — Agence",
       description: "Portfolio créatif haute gamme. Animations et micro-interactions.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+      image: landingAgency,
       tags: ["Agence", "Créatif", "Design"],
     },
     {
       id: 6,
       title: "Landing Page — App Mobile",
       description: "Landing d'application. Mockups devices et features showcase.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+      image: landingApp,
       tags: ["App", "Mobile", "Tech"],
     },
   ];
