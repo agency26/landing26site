@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { GradientButton } from "@/components/ui/gradient-button";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -9,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { MessageCircle, Calendar, ArrowRight, Sparkles } from "lucide-react";
+import { MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
 const QuickContactForm = () => {
@@ -24,7 +25,6 @@ const QuickContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate submission
     setTimeout(() => {
       toast.success("Message envoyé ! Réponse sous quelques minutes.");
       setFormData({ name: "", email: "", project: "" });
@@ -37,41 +37,26 @@ const QuickContactForm = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-card py-24">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5" />
-      
-      {/* Decorative elements */}
-      <div className="absolute left-1/4 top-0 h-px w-1/2 bg-gradient-to-r from-transparent via-border to-transparent" />
-      <div className="absolute bottom-0 left-1/4 h-px w-1/2 bg-gradient-to-r from-transparent via-border to-transparent" />
+    <section className="relative overflow-hidden bg-white py-24">
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40" />
 
       <div className="container relative mx-auto px-4">
         <div className="mx-auto max-w-xl">
           {/* Header */}
           <div className="mb-10 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/50 bg-background/50 px-4 py-1.5 backdrop-blur-sm">
-              <Sparkles className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium text-muted-foreground">
-                Formulaire rapide
-              </span>
-            </div>
-            <h2 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">
-              Démarrez votre projet
-            </h2>
-            <p className="text-muted-foreground">
+            <h2 className="mb-4 font-black">Démarrez votre projet</h2>
+            <p className="text-lg text-muted-foreground">
               Remplissez en 20 secondes, recevez une réponse en quelques minutes
             </p>
           </div>
 
           {/* Form Card */}
-          <div className="relative rounded-2xl border border-border/50 bg-background/80 p-8 shadow-xl backdrop-blur-sm transition-all duration-300 hover:border-border hover:shadow-2xl md:p-10">
-            {/* Glow effect */}
-            <div className="absolute -inset-px -z-10 rounded-2xl bg-gradient-to-b from-secondary/20 via-transparent to-primary/20 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
-
+          <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-lg)] md:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div className="space-y-2">
-                <Label htmlFor="quick-name" className="text-sm font-medium">
+                <Label htmlFor="quick-name" className="font-medium">
                   Nom
                 </Label>
                 <Input
@@ -82,13 +67,13 @@ const QuickContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Votre nom"
-                  className="h-12 rounded-xl border-border/50 bg-card/50 transition-colors focus:border-secondary focus:bg-background"
+                  className="h-12 rounded-xl bg-background"
                 />
               </div>
 
               {/* Email */}
               <div className="space-y-2">
-                <Label htmlFor="quick-email" className="text-sm font-medium">
+                <Label htmlFor="quick-email" className="font-medium">
                   Email
                 </Label>
                 <Input
@@ -99,13 +84,13 @@ const QuickContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="votre@email.com"
-                  className="h-12 rounded-xl border-border/50 bg-card/50 transition-colors focus:border-secondary focus:bg-background"
+                  className="h-12 rounded-xl bg-background"
                 />
               </div>
 
               {/* Project Type */}
               <div className="space-y-2">
-                <Label htmlFor="quick-project" className="text-sm font-medium">
+                <Label htmlFor="quick-project" className="font-medium">
                   Votre projet ?
                 </Label>
                 <Select
@@ -115,7 +100,7 @@ const QuickContactForm = () => {
                   }
                   required
                 >
-                  <SelectTrigger className="h-12 rounded-xl border-border/50 bg-card/50 transition-colors focus:border-secondary focus:bg-background">
+                  <SelectTrigger className="h-12 rounded-xl bg-background">
                     <SelectValue placeholder="Sélectionnez un type de projet" />
                   </SelectTrigger>
                   <SelectContent>
@@ -130,11 +115,11 @@ const QuickContactForm = () => {
               </div>
 
               {/* Submit Button */}
-              <Button
+              <GradientButton
                 type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="group h-14 w-full rounded-xl bg-gradient-to-r from-primary to-primary/80 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl disabled:opacity-70"
+                className="w-full shadow-[var(--shadow-colored)]"
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
@@ -144,32 +129,31 @@ const QuickContactForm = () => {
                 ) : (
                   <span className="flex items-center gap-2">
                     Recevoir une réponse en quelques minutes
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="h-5 w-5" />
                   </span>
                 )}
-              </Button>
+              </GradientButton>
             </form>
           </div>
 
           {/* Alternative Contact */}
-          <div className="mt-8 text-center">
-            <p className="mb-5 text-sm text-muted-foreground">
+          <div className="mt-10 text-center">
+            <p className="mb-6 text-muted-foreground">
               Pas le temps ? Contactez-moi directement via WhatsApp ou réservez un créneau.
             </p>
-            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button
                 variant="outline"
                 size="lg"
                 asChild
-                className="w-full rounded-xl border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-[#25D366] hover:bg-[#25D366]/10 hover:text-[#25D366] sm:w-auto"
+                className="w-full border-2 font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:scale-105 sm:w-auto"
               >
                 <a
                   href="https://wa.me/33768410643?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2"
                 >
-                  <MessageCircle className="h-5 w-5" />
+                  <MessageCircle className="mr-2 h-5 w-5" />
                   WhatsApp
                 </a>
               </Button>
@@ -177,15 +161,14 @@ const QuickContactForm = () => {
                 variant="outline"
                 size="lg"
                 asChild
-                className="w-full rounded-xl border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-secondary hover:bg-secondary/10 hover:text-secondary sm:w-auto"
+                className="w-full border-2 font-semibold transition-all hover:border-secondary hover:bg-secondary/10 hover:scale-105 sm:w-auto"
               >
                 <a
                   href="https://calendly.com/kabalodov/rdv"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2"
                 >
-                  <Calendar className="h-5 w-5" />
+                  <Calendar className="mr-2 h-5 w-5" />
                   Réserver un créneau
                 </a>
               </Button>
