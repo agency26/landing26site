@@ -2,9 +2,10 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight, MapPin, Clock, Euro, Briefcase, Sparkles } from "lucide-react";
+import { CheckCircle2, ArrowRight, MapPin, Briefcase, Sparkles } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import QuickContactForm from "@/components/QuickContactForm";
 import { getVilleBySlug } from "@/utils/csvParser";
 import { SEOHead } from "@/components/SEOHead";
 import NotFound from "./NotFound";
@@ -141,8 +142,8 @@ const VilleDetail = () => {
                 Contrairement à un site classique, une landing page à {ville.ville} est conçue pour un seul objectif : convertir.
               </p>
               <p>
-                La <strong className="text-foreground">création de landing page à {ville.ville}</strong> avec Landing26 
-                vous garantit un design premium adapté à votre marché local. Chaque page est optimisée pour vos campagnes 
+                La <strong className="text-foreground">création de landing page à {ville.ville}</strong> avec Landing26 vous 
+                garantit un design premium adapté à votre marché local. Chaque page est optimisée pour vos campagnes 
                 Meta Ads et Google Ads, avec un taux de conversion maximisé grâce à notre approche mobile-first.
               </p>
               <p>
@@ -265,38 +266,8 @@ const VilleDetail = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40"></div>
-        <div className="container relative mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 font-black">Prêt à lancer votre projet à {ville.ville} ?</h2>
-            <p className="mb-8 text-lg md:text-xl font-medium text-muted-foreground">
-              Réservez votre créneau maintenant. Livraison garantie en 3 jours.
-            </p>
-            
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <GradientButton size="lg" asChild className="shadow-2xl">
-                <a
-                  href="https://calendly.com/kabalodov/rdv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Clock className="mr-2 h-5 w-5" />
-                  Réserver un créneau
-                </a>
-              </GradientButton>
-              
-              <Button size="lg" variant="outline" asChild>
-                <Link to="/tarifs">
-                  <Euro className="mr-2 h-5 w-5" />
-                  Voir les tarifs
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Quick Contact Form */}
+      <QuickContactForm />
 
       {/* Internal Linking Section */}
       <section className="border-t border-border bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
