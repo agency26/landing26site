@@ -3,13 +3,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
@@ -17,6 +10,7 @@ const QuickContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile: "",
     project: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,7 +21,7 @@ const QuickContactForm = () => {
     
     setTimeout(() => {
       toast.success("Message envoyé ! Réponse sous quelques minutes.");
-      setFormData({ name: "", email: "", project: "" });
+      setFormData({ name: "", email: "", mobile: "", project: "" });
       setIsSubmitting(false);
     }, 800);
   };
@@ -88,30 +82,37 @@ const QuickContactForm = () => {
                 />
               </div>
 
-              {/* Project Type */}
+              {/* Mobile */}
+              <div className="space-y-2">
+                <Label htmlFor="quick-mobile" className="font-medium">
+                  Mobile
+                </Label>
+                <Input
+                  id="quick-mobile"
+                  name="mobile"
+                  type="tel"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  placeholder="+33 6 12 34 56 78"
+                  className="h-12 rounded-xl bg-background"
+                />
+              </div>
+
+              {/* Project */}
               <div className="space-y-2">
                 <Label htmlFor="quick-project" className="font-medium">
                   Votre projet ?
                 </Label>
-                <Select
-                  value={formData.project}
-                  onValueChange={(value) =>
-                    setFormData({ ...formData, project: value })
-                  }
+                <Input
+                  id="quick-project"
+                  name="project"
+                  type="text"
                   required
-                >
-                  <SelectTrigger className="h-12 rounded-xl bg-background">
-                    <SelectValue placeholder="Sélectionnez un type de projet" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="landing-page">
-                      Création de landing page
-                    </SelectItem>
-                    <SelectItem value="meta-ads">Meta Ads</SelectItem>
-                    <SelectItem value="google-ads">Google Ads</SelectItem>
-                    <SelectItem value="autre">Autre</SelectItem>
-                  </SelectContent>
-                </Select>
+                  value={formData.project}
+                  onChange={handleChange}
+                  placeholder="Décrivez brièvement votre projet"
+                  className="h-12 rounded-xl bg-background"
+                />
               </div>
 
               {/* Submit Button */}
