@@ -31,7 +31,7 @@ const QuickContactForm = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-24">
+    <section id="contact-form" className="relative overflow-hidden bg-white py-24 scroll-mt-20">
       {/* Mesh gradient background */}
       <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40" />
 
