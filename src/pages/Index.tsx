@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import QuickContactForm from "@/components/QuickContactForm";
 import { villes, secteurs } from "@/utils/csvParser";
 import { SEOHead } from "@/components/SEOHead";
 
@@ -459,6 +460,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Quick Contact Form */}
+      <QuickContactForm />
 
       {/* CTA Section */}
       <section className="bg-white py-24 relative overflow-hidden">
