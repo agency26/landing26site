@@ -126,7 +126,7 @@ const Index = () => {
                 className="text-lg shadow-2xl"
                 onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
               >
-                Réserver un créneau
+                Commander ma landing
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </GradientButton>
               
