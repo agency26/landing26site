@@ -2,9 +2,10 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight, Briefcase, Clock, Euro, MapPin, Sparkles } from "lucide-react";
+import { CheckCircle2, ArrowRight, Briefcase, MapPin, Sparkles } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import QuickContactForm from "@/components/QuickContactForm";
 import { getSecteurBySlug } from "@/utils/csvParser";
 import { SEOHead } from "@/components/SEOHead";
 import NotFound from "./NotFound";
@@ -140,12 +141,12 @@ const SecteurDetail = () => {
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
               <p>
                 En tant que {secteur.secteur.toLowerCase()}, votre présence digitale doit refléter votre expertise. 
-                Une <strong className="text-foreground">landing page professionnelle pour {secteur.secteur.toLowerCase()}</strong> 
-                vous permet de convertir vos visiteurs en clients qualifiés, sans les distraire avec des pages inutiles.
+                Une <strong className="text-foreground">landing page professionnelle pour {secteur.secteur.toLowerCase()}</strong> vous 
+                permet de convertir vos visiteurs en clients qualifiés, sans les distraire avec des pages inutiles.
               </p>
               <p>
-                La <strong className="text-foreground">création de landing page {secteur.secteur.toLowerCase()}</strong> 
-                avec Landing26 est pensée pour votre métier. Nous comprenons les enjeux spécifiques de votre secteur 
+                La <strong className="text-foreground">création de landing page {secteur.secteur.toLowerCase()}</strong> avec 
+                Landing26 est pensée pour votre métier. Nous comprenons les enjeux spécifiques de votre secteur 
                 et créons des pages qui parlent directement à vos prospects, avec un design premium qui inspire confiance.
               </p>
               <p>
@@ -268,38 +269,8 @@ const SecteurDetail = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[var(--mesh-gradient)] opacity-40"></div>
-        <div className="container relative mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 font-black">Prêt à lancer votre projet ?</h2>
-            <p className="mb-8 text-lg md:text-xl font-medium text-muted-foreground">
-              Réservez votre créneau maintenant. Livraison garantie en 3 jours.
-            </p>
-            
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <GradientButton size="lg" asChild className="shadow-2xl">
-                <a
-                  href="https://calendly.com/kabalodov/rdv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Clock className="mr-2 h-5 w-5" />
-                  Réserver un créneau
-                </a>
-              </GradientButton>
-              
-              <Button size="lg" variant="outline" asChild>
-                <Link to="/tarifs">
-                  <Euro className="mr-2 h-5 w-5" />
-                  Voir les tarifs
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Quick Contact Form */}
+      <QuickContactForm />
 
       {/* Internal Linking Section */}
       <section className="border-t border-border bg-gradient-to-br from-background via-secondary/5 to-background py-20 relative overflow-hidden">
