@@ -25,8 +25,8 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
-          orange: "hsl(var(--primary-orange))",
-          purple: "hsl(var(--primary-purple))",
+          light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
           foreground: "hsl(var(--primary-foreground))",
         },
         dark: {
@@ -106,8 +106,8 @@ export default {
           "50%": { opacity: "0.5" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(280 100% 65% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(280 100% 65% / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(220 90% 50% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(220 90% 50% / 0.6)" },
         },
         "gradient-shift": {
           "0%, 100%": { backgroundPosition: "0% 50%" },
