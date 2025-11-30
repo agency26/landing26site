@@ -21,13 +21,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
     
-    /* Red/Orange/Purple Color System */
+    /* Red/Orange Color System */
     --primary: 8 100% 61%;         /* #FF4338 - Vibrant Red */
     --primary-orange: 25 100% 55%; /* #FF6B1A - Electric Orange */
-    --primary-purple: 280 85% 55%; /* #9B27B0 - Bold Purple */
+    --primary-dark: 8 100% 45%;    /* #E62E24 - Dark Red */
     --primary-foreground: 0 0% 100%;
-    --primary-gradient: linear-gradient(135deg, hsl(8 100% 61%), hsl(25 100% 55%), hsl(280 85% 55%));
-    --primary-gradient-bold: linear-gradient(120deg, hsl(8 100% 61%) 0%, hsl(25 100% 55%) 50%, hsl(280 85% 55%) 100%);
+    --primary-gradient: linear-gradient(135deg, hsl(8 100% 61%), hsl(25 100% 55%), hsl(8 100% 45%));
+    --primary-gradient-bold: linear-gradient(120deg, hsl(8 100% 61%) 0%, hsl(25 100% 55%) 50%, hsl(8 100% 45%) 100%);
     
     /* Secondary - Orange */
     --secondary: 25 100% 55%;      /* #FF6B1A - Electric Orange */
@@ -38,8 +38,8 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;            /* #F5F5F5 - Light gray */
     --muted-foreground: 0 0% 40%;
     
-    /* Accent - Purple */
-    --accent: 280 85% 55%;        /* Bold Purple accent */
+    /* Accent - Orange */
+    --accent: 25 100% 55%;        /* Electric Orange accent */
     --accent-foreground: 0 0% 100%;
     
     /* Destructive */
@@ -53,11 +53,11 @@ All colors MUST be HSL.
     
     --radius: 1.25rem;            /* 20px - Bold rounded */
     
-    /* Red/Orange/Purple Design Tokens */
+    /* Red/Orange Design Tokens */
     --hero-gradient: linear-gradient(135deg, hsl(8 100% 98%), hsl(25 100% 98%), hsl(0 0% 100%));
     --mesh-gradient: radial-gradient(at 0% 0%, hsl(8 100% 61% / 0.1) 0px, transparent 50%),
                      radial-gradient(at 100% 0%, hsl(25 100% 55% / 0.1) 0px, transparent 50%),
-                     radial-gradient(at 100% 100%, hsl(280 85% 55% / 0.1) 0px, transparent 50%);
+                     radial-gradient(at 100% 100%, hsl(8 100% 45% / 0.1) 0px, transparent 50%);
     --card-hover: 0 0% 94%;
     --shadow-sm: 0 2px 12px hsl(0 0% 0% / 0.06);
     --shadow-md: 0 6px 24px hsl(0 0% 0% / 0.08);
