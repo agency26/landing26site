@@ -21,14 +21,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
     
-    /* Blue & Black Color System with Orange Accent */
+    /* Blue & Black Color System */
     --primary: 220 90% 50%;        /* #1A56DB - Deep Blue */
     --primary-light: 220 90% 60%;  /* #3B82F6 - Bright Blue */
     --primary-dark: 220 50% 15%;   /* #0F172A - Near Black */
     --primary-foreground: 0 0% 100%;
-    --orange-accent: 25 95% 53%;   /* #F97316 - Vibrant Orange */
     --primary-gradient: linear-gradient(135deg, hsl(220 90% 50%), hsl(220 50% 15%));
-    --primary-gradient-bold: linear-gradient(120deg, hsl(25 95% 53%) 0%, hsl(220 90% 50%) 40%, hsl(220 50% 15%) 100%);
+    --primary-gradient-bold: linear-gradient(120deg, hsl(220 90% 60%) 0%, hsl(220 90% 50%) 50%, hsl(220 50% 15%) 100%);
     
     /* Secondary - Lighter Blue */
     --secondary: 220 90% 60%;      /* #3B82F6 - Bright Blue */
