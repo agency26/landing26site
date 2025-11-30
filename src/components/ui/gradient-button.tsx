@@ -9,7 +9,7 @@ const gradientButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-gradient-to-r from-primary-light via-primary to-primary-dark text-primary-foreground shadow-lg hover:shadow-2xl hover:shadow-primary/30 hover:scale-[1.05] bg-200% animate-gradient-shift",
+          "bg-gradient-to-r from-orange-accent via-primary to-primary-dark text-primary-foreground shadow-lg hover:shadow-2xl hover:shadow-primary/30 hover:scale-[1.05] bg-200% animate-gradient-shift",
         outline:
           "border-2 border-transparent bg-gradient-to-r from-primary-light via-primary to-primary-dark bg-clip-text text-transparent hover:bg-clip-border hover:text-primary-foreground hover:scale-[1.02] bg-200% animate-gradient-shift",
       },
