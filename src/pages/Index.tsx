@@ -80,7 +80,7 @@ const Index = () => {
             </div>
             
             <h1 className="mb-6 animate-fade-in-up font-black tracking-tight leading-tight md:leading-relaxed">
-              Votre landing page pro <span className="whitespace-nowrap">en 3 jours</span> — <span className="bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-transparent whitespace-nowrap">499 € HT</span>
+              Votre landing page pro <span className="whitespace-nowrap">en 3 jours</span> — <span className="bg-gradient-to-r from-primary via-primary-orange to-primary-dark bg-clip-text text-transparent whitespace-nowrap">499 € HT</span>
             </h1>
             
             <p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl font-medium animate-fade-in-up" style={{
@@ -188,7 +188,7 @@ const Index = () => {
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="mb-2 bg-gradient-to-r from-primary via-primary-orange to-primary-purple bg-clip-text text-4xl md:text-5xl font-black text-transparent">499 €</div>
+                    <div className="mb-2 bg-gradient-to-r from-primary via-primary-orange to-primary-dark bg-clip-text text-4xl md:text-5xl font-black text-transparent">499 €</div>
                     <div className="text-sm text-muted-foreground font-semibold">HT</div>
                   </div>
                 </div>
