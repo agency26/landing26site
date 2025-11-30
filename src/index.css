@@ -21,25 +21,25 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
     
-    /* Vibrant Gradient - Red to Orange with Purple accent */
-    --primary: 4 100% 61%;        /* #FF4338 - Electric Red */
-    --primary-orange: 14 100% 57%; /* #FF6B3D - Vibrant Orange */
-    --primary-purple: 280 100% 65%; /* #A855F7 - Electric Purple */
+    /* Blue & Black Color System */
+    --primary: 220 90% 50%;        /* #1A56DB - Deep Blue */
+    --primary-light: 220 90% 60%;  /* #3B82F6 - Bright Blue */
+    --primary-dark: 220 50% 15%;   /* #0F172A - Near Black */
     --primary-foreground: 0 0% 100%;
-    --primary-gradient: linear-gradient(135deg, hsl(4 100% 61%), hsl(14 100% 57%), hsl(280 100% 65%));
-    --primary-gradient-bold: linear-gradient(120deg, hsl(4 100% 61%) 0%, hsl(14 100% 57%) 50%, hsl(280 100% 65%) 100%);
+    --primary-gradient: linear-gradient(135deg, hsl(220 90% 50%), hsl(220 50% 15%));
+    --primary-gradient-bold: linear-gradient(120deg, hsl(220 90% 60%) 0%, hsl(220 90% 50%) 50%, hsl(220 50% 15%) 100%);
     
-    /* Electric Blue - Strong Accents */
-    --secondary: 215 100% 60%;     /* #2563EB - Electric Blue */
-    --secondary-light: 215 100% 70%;
+    /* Secondary - Lighter Blue */
+    --secondary: 220 90% 60%;      /* #3B82F6 - Bright Blue */
+    --secondary-light: 220 85% 70%;
     --secondary-foreground: 0 0% 100%;
     
     /* Muted Surfaces */
     --muted: 0 0% 96%;            /* #F5F5F5 - Light gray */
     --muted-foreground: 0 0% 40%;
     
-    /* Accent - Vibrant */
-    --accent: 280 100% 65%;       /* Purple accent */
+    /* Accent - Deep Blue */
+    --accent: 220 90% 50%;        /* Deep Blue accent */
     --accent-foreground: 0 0% 100%;
     
     /* Destructive */
@@ -49,21 +49,21 @@ All colors MUST be HSL.
     /* Borders & Inputs */
     --border: 0 0% 88%;
     --input: 0 0% 96%;
-    --ring: 215 100% 60%;
+    --ring: 220 90% 50%;
     
     --radius: 1.25rem;            /* 20px - Bold rounded */
     
-    /* Bold Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(215 100% 98%), hsl(280 100% 98%), hsl(0 0% 100%));
-    --mesh-gradient: radial-gradient(at 0% 0%, hsl(280 100% 65% / 0.15) 0px, transparent 50%),
-                     radial-gradient(at 100% 0%, hsl(4 100% 61% / 0.15) 0px, transparent 50%),
-                     radial-gradient(at 100% 100%, hsl(215 100% 60% / 0.15) 0px, transparent 50%);
+    /* Blue & Black Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(220 100% 98%), hsl(220 50% 98%), hsl(0 0% 100%));
+    --mesh-gradient: radial-gradient(at 0% 0%, hsl(220 90% 50% / 0.1) 0px, transparent 50%),
+                     radial-gradient(at 100% 0%, hsl(220 50% 15% / 0.1) 0px, transparent 50%),
+                     radial-gradient(at 100% 100%, hsl(220 90% 60% / 0.1) 0px, transparent 50%);
     --card-hover: 0 0% 94%;
     --shadow-sm: 0 2px 12px hsl(0 0% 0% / 0.06);
     --shadow-md: 0 6px 24px hsl(0 0% 0% / 0.08);
     --shadow-lg: 0 12px 48px hsl(0 0% 0% / 0.12);
-    --shadow-colored: 0 8px 32px hsl(4 100% 61% / 0.2);
-    --shadow-glow: 0 0 40px hsl(280 100% 65% / 0.3);
+    --shadow-colored: 0 8px 32px hsl(220 90% 50% / 0.2);
+    --shadow-glow: 0 0 40px hsl(220 90% 50% / 0.25);
     --transition-smooth: all 240ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
     
